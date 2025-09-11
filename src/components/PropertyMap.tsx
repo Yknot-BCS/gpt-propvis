@@ -1,11 +1,12 @@
 "use client";
 import React, { useState } from 'react';
-import { MapPin, Building, Users, TrendingUp, X, Eye, Edit } from 'lucide-react';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { MapPin, X, Eye, Edit } from 'lucide-react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 // Fix for default markers in react-leaflet
+// eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png',
@@ -571,7 +572,7 @@ const CustomMarker: React.FC<{ property: PropertyLocation; onPropertyClick: (pro
               lineHeight: '1.5',
               boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
             }}>
-              "{property.description}"
+              &ldquo;{property.description}&rdquo;
             </div>
           )}
 
