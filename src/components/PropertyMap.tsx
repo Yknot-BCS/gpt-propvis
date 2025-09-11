@@ -432,48 +432,51 @@ const CustomMarker: React.FC<{ property: PropertyLocation; onPropertyClick: (pro
         click: () => onPropertyClick(property),
       }}
     >
-      <Popup maxWidth={400} minWidth={300}>
+      <Popup maxWidth={500} minWidth={450}>
         <div style={{ 
-          padding: '16px', 
-          maxWidth: '400px', 
+          padding: '20px', 
+          maxWidth: '500px', 
+          minWidth: '450px',
           fontFamily: 'system-ui, -apple-system, sans-serif',
           background: 'linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%)',
-          borderRadius: '12px',
-          border: '1px solid #e2e8f0'
+          borderRadius: '16px',
+          border: '2px solid #e2e8f0',
+          boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
         }}>
           {/* Header */}
           <div style={{ 
             display: 'flex', 
             alignItems: 'center', 
             justifyContent: 'space-between',
-            marginBottom: '12px',
-            paddingBottom: '8px',
-            borderBottom: '2px solid #e2e8f0'
+            marginBottom: '20px',
+            paddingBottom: '12px',
+            borderBottom: '3px solid #e2e8f0'
           }}>
             <div>
               <div style={{ 
                 fontWeight: '700', 
                 color: '#1e293b', 
-                fontSize: '16px',
-                marginBottom: '4px'
+                fontSize: '20px',
+                marginBottom: '6px',
+                lineHeight: '1.2'
               }}>
                 {property.name}
               </div>
               <div style={{ 
-                fontSize: '12px', 
+                fontSize: '13px', 
                 color: '#64748b',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '4px'
+                gap: '6px'
               }}>
-                <span>📍</span>
+                <span style={{ fontSize: '14px' }}>📍</span>
                 {property.address}
               </div>
             </div>
             <div style={{
-              padding: '6px 12px',
-              borderRadius: '20px',
-              fontSize: '11px',
+              padding: '8px 16px',
+              borderRadius: '25px',
+              fontSize: '13px',
               fontWeight: '600',
               color: property.status === 'Active' ? '#065f46' : 
                     property.status === 'Vacant' ? '#991b1b' :
@@ -490,22 +493,23 @@ const CustomMarker: React.FC<{ property: PropertyLocation; onPropertyClick: (pro
           <div style={{ 
             display: 'grid', 
             gridTemplateColumns: '1fr 1fr', 
-            gap: '12px',
-            marginBottom: '12px'
+            gap: '16px',
+            marginBottom: '20px'
           }}>
-            <div style={{ textAlign: 'center', padding: '8px', background: 'white', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
-              <div style={{ fontSize: '18px', fontWeight: '700', color: '#1e293b' }}>{property.value}</div>
-              <div style={{ fontSize: '10px', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Property Value</div>
+            <div style={{ textAlign: 'center', padding: '14px', background: 'white', borderRadius: '12px', border: '2px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
+              <div style={{ fontSize: '20px', fontWeight: '700', color: '#1e293b', marginBottom: '4px' }}>{property.value}</div>
+              <div style={{ fontSize: '11px', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: '600' }}>Property Value</div>
             </div>
-            <div style={{ textAlign: 'center', padding: '8px', background: 'white', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
+            <div style={{ textAlign: 'center', padding: '14px', background: 'white', borderRadius: '12px', border: '2px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
               <div style={{ 
-                fontSize: '18px', 
+                fontSize: '20px', 
                 fontWeight: '700', 
-                color: property.occupancy >= 80 ? '#059669' : property.occupancy >= 50 ? '#d97706' : '#dc2626'
+                color: property.occupancy >= 80 ? '#059669' : property.occupancy >= 50 ? '#d97706' : '#dc2626',
+                marginBottom: '4px'
               }}>
                 {property.occupancy}%
               </div>
-              <div style={{ fontSize: '10px', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Occupancy</div>
+              <div style={{ fontSize: '11px', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: '600' }}>Occupancy Rate</div>
             </div>
           </div>
 
@@ -513,20 +517,29 @@ const CustomMarker: React.FC<{ property: PropertyLocation; onPropertyClick: (pro
           <div style={{ 
             display: 'grid', 
             gridTemplateColumns: '1fr 1fr', 
-            gap: '8px',
-            marginBottom: '12px'
+            gap: '12px',
+            marginBottom: '20px',
+            padding: '16px',
+            background: 'white',
+            borderRadius: '12px',
+            border: '2px solid #e2e8f0',
+            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
           }}>
-            <div style={{ fontSize: '11px', color: '#64748b' }}>
-              <strong style={{ color: '#374151' }}>Type:</strong> {property.type}
+            <div style={{ fontSize: '12px', color: '#64748b', padding: '6px 0' }}>
+              <strong style={{ color: '#374151', fontSize: '13px' }}>Property Type:</strong><br/>
+              <span style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b' }}>{property.type}</span>
             </div>
-            <div style={{ fontSize: '11px', color: '#64748b' }}>
-              <strong style={{ color: '#374151' }}>Tenants:</strong> {property.tenants}
+            <div style={{ fontSize: '12px', color: '#64748b', padding: '6px 0' }}>
+              <strong style={{ color: '#374151', fontSize: '13px' }}>Active Tenants:</strong><br/>
+              <span style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b' }}>{property.tenants}</span>
             </div>
-            <div style={{ fontSize: '11px', color: '#64748b' }}>
-              <strong style={{ color: '#374151' }}>Built:</strong> {property.yearBuilt}
+            <div style={{ fontSize: '12px', color: '#64748b', padding: '6px 0' }}>
+              <strong style={{ color: '#374151', fontSize: '13px' }}>Year Built:</strong><br/>
+              <span style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b' }}>{property.yearBuilt}</span>
             </div>
-            <div style={{ fontSize: '11px', color: '#64748b' }}>
-              <strong style={{ color: '#374151' }}>Size:</strong> {property.size}
+            <div style={{ fontSize: '12px', color: '#64748b', padding: '6px 0' }}>
+              <strong style={{ color: '#374151', fontSize: '13px' }}>Total Size:</strong><br/>
+              <span style={{ fontSize: '14px', fontWeight: '600', color: '#1e293b' }}>{property.size}</span>
             </div>
           </div>
 
@@ -534,25 +547,29 @@ const CustomMarker: React.FC<{ property: PropertyLocation; onPropertyClick: (pro
           <div style={{ 
             background: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
             color: 'white',
-            padding: '10px',
-            borderRadius: '8px',
+            padding: '16px',
+            borderRadius: '12px',
             textAlign: 'center',
-            marginBottom: '8px'
+            marginBottom: '16px',
+            boxShadow: '0 8px 16px -4px rgba(59, 130, 246, 0.3)'
           }}>
-            <div style={{ fontSize: '12px', opacity: '0.9', marginBottom: '2px' }}>Monthly Revenue</div>
-            <div style={{ fontSize: '16px', fontWeight: '700' }}>{property.monthlyRevenue}</div>
+            <div style={{ fontSize: '12px', opacity: '0.9', marginBottom: '4px', fontWeight: '600' }}>Monthly Revenue</div>
+            <div style={{ fontSize: '20px', fontWeight: '700' }}>{property.monthlyRevenue}</div>
           </div>
 
           {/* Description */}
           {property.description && (
             <div style={{ 
-              fontSize: '11px', 
+              fontSize: '12px', 
               color: '#64748b', 
               fontStyle: 'italic',
-              padding: '8px',
+              padding: '12px',
               background: 'white',
-              borderRadius: '6px',
-              border: '1px solid #e2e8f0'
+              borderRadius: '12px',
+              border: '2px solid #e2e8f0',
+              marginBottom: '16px',
+              lineHeight: '1.5',
+              boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
             }}>
               "{property.description}"
             </div>
@@ -561,12 +578,13 @@ const CustomMarker: React.FC<{ property: PropertyLocation; onPropertyClick: (pro
           {/* Click hint */}
           <div style={{ 
             textAlign: 'center', 
-            fontSize: '10px', 
+            fontSize: '12px', 
             color: '#94a3b8', 
-            marginTop: '8px',
-            padding: '4px',
+            marginTop: '12px',
+            padding: '8px',
             background: '#f8fafc',
-            borderRadius: '4px'
+            borderRadius: '8px',
+            fontWeight: '500'
           }}>
             Click marker for full details
           </div>

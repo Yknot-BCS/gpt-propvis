@@ -55,8 +55,8 @@ const recentProperties = [
 // Top Navigation component
 const TopNavbar: React.FC<{ currentView: string; setCurrentView: (view: string) => void }> = ({ currentView, setCurrentView }) => {
   const menuItems = [
-    { id: 'dashboard', name: 'Dashboard', icon: BarChart3 },
     { id: 'map', name: 'Property Map', icon: MapPin },
+    { id: 'dashboard', name: 'Dashboard', icon: BarChart3 },
     { id: 'properties', name: 'Properties', icon: Building },
     { id: 'analytics', name: 'Analytics', icon: TrendingUp },
     { id: 'tenants', name: 'Tenants', icon: Users }
