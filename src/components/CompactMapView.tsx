@@ -104,32 +104,35 @@ export function CompactMapView({ onPropertySelect, height = 400 }: CompactMapVie
   }, [activeProperties, onPropertySelect]);
 
   return (
-    <div className="relative w-full rounded-lg overflow-hidden border" style={{ height: `${height}px` }}>
-      <div ref={mapContainerRef} className="absolute inset-0" />
-      
-      {/* Compact Legend */}
-      <div className="absolute bottom-2 right-2 bg-background/95 backdrop-blur-sm px-3 py-2 rounded-md shadow-md z-[1000] text-xs">
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-full bg-blue-500" />
-            <span>Office</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-full bg-orange-500" />
-            <span>Industrial</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
-            <span>Retail</span>
-          </div>
-        </div>
+    <div className="space-y-2">
+      {/* Property Count */}
+      <div className="flex items-center justify-between">
+        <p className="text-sm text-muted-foreground">
+          Showing <span className="font-semibold text-foreground">{activeProperties.length}</span> active properties
+        </p>
       </div>
 
-      {/* Property Count Badge */}
-      <div className="absolute top-2 left-2 bg-background/95 backdrop-blur-sm px-3 py-1.5 rounded-md shadow-md z-[1000]">
-        <p className="text-xs">
-          <span className="text-muted-foreground">{activeProperties.length} Properties</span>
-        </p>
+      {/* Map Container */}
+      <div className="relative w-full rounded-lg overflow-hidden border" style={{ height: `${height}px` }}>
+        <div ref={mapContainerRef} className="absolute inset-0" />
+        
+        {/* Compact Legend */}
+        <div className="absolute bottom-2 right-2 bg-background/95 backdrop-blur-sm px-3 py-2 rounded-md shadow-md z-[1000] text-xs">
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-1.5">
+              <div className="w-2.5 h-2.5 rounded-full bg-blue-500" />
+              <span>Office</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <div className="w-2.5 h-2.5 rounded-full bg-orange-500" />
+              <span>Industrial</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
+              <span>Retail</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
