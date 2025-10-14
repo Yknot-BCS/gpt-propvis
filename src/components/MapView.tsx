@@ -15,13 +15,16 @@ interface MapViewProps {
 
 export function MapView({ selectedProperty, onPropertySelect }: MapViewProps) {
   const [activeFilter, setActiveFilter] = useState<'all' | 'Office' | 'Industrial' | 'Retail'>('all');
+  const [locationFilter, setLocationFilter] = useState<'all' | 'Gauteng' | 'KwaZulu-Natal' | 'Western Cape'>('all');
   const mapRef = useRef<L.Map | null>(null);
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const markersRef = useRef<L.Marker[]>([]);
 
-  const filteredProperties = activeFilter === 'all' 
-    ? properties.filter(p => p.status === 'Active')
-    : properties.filter(p => p.type === activeFilter && p.status === 'Active');
+  // Filter properties by both type and location
+  const filteredProperties = properties
+    .filter(p => p.status === 'Active')
+    .filter(p => activeFilter === 'all' || p.type === activeFilter)
+    .filter(p => locationFilter === 'all' || p.location.region === locationFilter);
 
   const formatCurrency = (value: number) => {
     return new Intl.NumberFormat('en-ZA', {
@@ -217,37 +220,81 @@ export function MapView({ selectedProperty, onPropertySelect }: MapViewProps) {
       {/* Map Container */}
       <Card className="flex-1">
           <CardHeader>
-            <div className="flex items-center justify-between">
-              <CardTitle>Property Portfolio Map</CardTitle>
-              <div className="flex gap-2">
-                <Button
-                  variant={activeFilter === 'all' ? 'default' : 'outline'}
-                  size="sm"
-                  onClick={() => setActiveFilter('all')}
-                >
-                  All
-                </Button>
-                <Button
-                  variant={activeFilter === 'Office' ? 'default' : 'outline'}
-                  size="sm"
-                  onClick={() => setActiveFilter('Office')}
-                >
-                  Office
-                </Button>
-                <Button
-                  variant={activeFilter === 'Industrial' ? 'default' : 'outline'}
-                  size="sm"
-                  onClick={() => setActiveFilter('Industrial')}
-                >
-                  Industrial
-                </Button>
-                <Button
-                  variant={activeFilter === 'Retail' ? 'default' : 'outline'}
-                  size="sm"
-                  onClick={() => setActiveFilter('Retail')}
-                >
-                  Retail
-                </Button>
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center justify-between">
+                <CardTitle>Property Portfolio Map</CardTitle>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                {/* Property Type Filter */}
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-muted-foreground whitespace-nowrap">Type:</span>
+                  <div className="flex gap-2">
+                    <Button
+                      variant={activeFilter === 'all' ? 'default' : 'outline'}
+                      size="sm"
+                      onClick={() => setActiveFilter('all')}
+                    >
+                      All
+                    </Button>
+                    <Button
+                      variant={activeFilter === 'Office' ? 'default' : 'outline'}
+                      size="sm"
+                      onClick={() => setActiveFilter('Office')}
+                    >
+                      Office
+                    </Button>
+                    <Button
+                      variant={activeFilter === 'Industrial' ? 'default' : 'outline'}
+                      size="sm"
+                      onClick={() => setActiveFilter('Industrial')}
+                    >
+                      Industrial
+                    </Button>
+                    <Button
+                      variant={activeFilter === 'Retail' ? 'default' : 'outline'}
+                      size="sm"
+                      onClick={() => setActiveFilter('Retail')}
+                    >
+                      Retail
+                    </Button>
+                  </div>
+                </div>
+
+                {/* Location Filter */}
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-muted-foreground whitespace-nowrap">Location:</span>
+                  <div className="flex gap-2">
+                    <Button
+                      variant={locationFilter === 'all' ? 'default' : 'outline'}
+                      size="sm"
+                      onClick={() => setLocationFilter('all')}
+                    >
+                      All
+                    </Button>
+                    <Button
+                      variant={locationFilter === 'Gauteng' ? 'default' : 'outline'}
+                      size="sm"
+                      onClick={() => setLocationFilter('Gauteng')}
+                    >
+                      Gauteng
+                    </Button>
+                    <Button
+                      variant={locationFilter === 'KwaZulu-Natal' ? 'default' : 'outline'}
+                      size="sm"
+                      onClick={() => setLocationFilter('KwaZulu-Natal')}
+                    >
+                      KZN
+                    </Button>
+                    <Button
+                      variant={locationFilter === 'Western Cape' ? 'default' : 'outline'}
+                      size="sm"
+                      onClick={() => setLocationFilter('Western Cape')}
+                    >
+                      Western Cape
+                    </Button>
+                  </div>
+                </div>
               </div>
             </div>
           </CardHeader>
