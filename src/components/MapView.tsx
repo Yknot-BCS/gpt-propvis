@@ -304,7 +304,7 @@ export function MapView({ selectedProperty, onPropertySelect }: MapViewProps) {
               <div ref={mapContainerRef} className="absolute inset-0" />
 
               {/* Legend */}
-              <div className="absolute bottom-4 left-4 bg-background/95 backdrop-blur-sm p-4 rounded-lg shadow-lg z-[1000]">
+              <div className="absolute bottom-4 left-4 bg-background/95 backdrop-blur-sm p-4 rounded-lg shadow-lg z-[10]">
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <div className="w-4 h-4 rounded-full bg-blue-500" />

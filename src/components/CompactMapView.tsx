@@ -117,7 +117,7 @@ export function CompactMapView({ onPropertySelect, height = 400 }: CompactMapVie
         <div ref={mapContainerRef} className="absolute inset-0" />
         
         {/* Compact Legend */}
-        <div className="absolute bottom-2 right-2 bg-background/95 backdrop-blur-sm px-3 py-2 rounded-md shadow-md z-[1000] text-xs">
+        <div className="absolute bottom-2 right-2 bg-background/95 backdrop-blur-sm px-3 py-2 rounded-md shadow-md z-[10] text-xs">
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-1.5">
               <div className="w-2.5 h-2.5 rounded-full bg-blue-500" />
