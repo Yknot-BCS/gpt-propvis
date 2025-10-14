@@ -1,21 +1,16 @@
+'use client';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
-import { ScrollArea } from './ui/scroll-area';
 import { Separator } from './ui/separator';
 import { 
   X, 
   Download, 
   TrendingUp, 
-  TrendingDown, 
   Building2,
   MapPin,
   Users,
-  Calendar,
-  DollarSign,
-  Percent,
-  BarChart3,
-  Minus
+  DollarSign
 } from 'lucide-react';
 import type { Property } from '../lib/mockData';
 import { cn } from '@/lib/utils';
@@ -33,13 +28,13 @@ export function ComparisonPanel({ properties, open, onClose, userRole }: Compari
   const hasFinancialAccess = userRole === 'executive' || userRole === 'finance';
 
   // Helper to find best/worst values
-  const getBestValue = (values: (number | undefined)[], higher: boolean = true) => {
+  const getBestValue = (values: (number | undefined)[], higher = true) => {
     const validValues = values.filter((v): v is number => v !== undefined);
     if (validValues.length === 0) return undefined;
     return higher ? Math.max(...validValues) : Math.min(...validValues);
   };
 
-  const getValueIndicator = (value: number | undefined, best: number | undefined, higher: boolean = true) => {
+  const getValueIndicator = (value: number | undefined, best: number | undefined, _higher = true) => {
     if (value === undefined || best === undefined) return null;
     const isBest = value === best;
     if (isBest) {
@@ -49,13 +44,13 @@ export function ComparisonPanel({ properties, open, onClose, userRole }: Compari
   };
 
   // Calculate comparisons
-  const occupancyRates = properties.map(p => p.tenant?.occupancyRate);
+  const occupancyRates = properties.map(p => p.metrics.occupancyRate);
   const bestOccupancy = getBestValue(occupancyRates, true);
 
-  const rentals = properties.map(p => p.tenant?.monthlyRental);
-  const highestRental = getBestValue(rentals, true);
+  const revenues = properties.map(p => p.metrics.annualRevenue);
+  const highestRevenue = getBestValue(revenues, true);
 
-  const yields = properties.map(p => p.financials?.netYield);
+  const yields = properties.map(p => p.metrics.yieldRate);
   const bestYield = getBestValue(yields, true);
 
   const handleExport = () => {
@@ -158,26 +153,26 @@ export function ComparisonPanel({ properties, open, onClose, userRole }: Compari
                       ))}
                     </div>
 
-                    {/* GLA */}
+                    {/* Size */}
                     <div className="grid gap-4" style={{ gridTemplateColumns: `200px repeat(${properties.length}, 1fr)` }}>
                       <div className="flex items-center text-sm font-medium text-muted-foreground">
-                        Gross Lettable Area
+                        Total Size
                       </div>
                       {properties.map((property) => (
                         <div key={property.id} className="bg-muted/30 rounded-lg p-3">
-                          <p className="text-sm">{property.gla ? property.gla.toLocaleString() : 'N/A'} sqm</p>
+                          <p className="text-sm">{property.metrics.size.toLocaleString()} sqm</p>
                         </div>
                       ))}
                     </div>
 
-                    {/* Grade */}
+                    {/* Property Type */}
                     <div className="grid gap-4" style={{ gridTemplateColumns: `200px repeat(${properties.length}, 1fr)` }}>
                       <div className="flex items-center text-sm font-medium text-muted-foreground">
-                        Grade
+                        Property Type
                       </div>
                       {properties.map((property) => (
                         <div key={property.id} className="bg-muted/30 rounded-lg p-3">
-                          <Badge variant="secondary">Grade {property.grade}</Badge>
+                          <Badge variant="secondary">{property.type}</Badge>
                         </div>
                       ))}
                     </div>
@@ -200,7 +195,7 @@ export function ComparisonPanel({ properties, open, onClose, userRole }: Compari
                       </div>
                       {properties.map((property) => (
                         <div key={property.id} className="bg-muted/30 rounded-lg p-3">
-                          <p className="text-sm">{property.tenant?.name || 'Vacant'}</p>
+                          <p className="text-sm">{property.tenant?.name ?? 'Vacant'}</p>
                         </div>
                       ))}
                     </div>
@@ -235,7 +230,7 @@ export function ComparisonPanel({ properties, open, onClose, userRole }: Compari
                       </div>
                       {properties.map((property) => (
                         <div key={property.id} className="bg-muted/30 rounded-lg p-3">
-                          <p className="text-sm">{property.tenant?.leaseExpiry || 'N/A'}</p>
+                          <p className="text-sm">{property.tenant?.leaseExpiry ?? 'N/A'}</p>
                         </div>
                       ))}
                     </div>
@@ -252,14 +247,14 @@ export function ComparisonPanel({ properties, open, onClose, userRole }: Compari
                         Financial Performance
                       </h3>
                       <div className="space-y-3">
-                        {/* Monthly Rental */}
+                        {/* Annual Revenue */}
                         <div className="grid gap-4" style={{ gridTemplateColumns: `200px repeat(${properties.length}, 1fr)` }}>
                           <div className="flex items-center text-sm font-medium text-muted-foreground">
-                            Monthly Rental Income
+                            Annual Revenue
                           </div>
                           {properties.map((property, index) => {
-                            const value = rentals[index];
-                            const isBest = value === highestRental;
+                            const value = revenues[index];
+                            const isBest = value === highestRevenue;
                             return (
                               <div 
                                 key={property.id}
@@ -271,7 +266,7 @@ export function ComparisonPanel({ properties, open, onClose, userRole }: Compari
                                 <p className="text-sm">
                                   {value !== undefined ? `R ${value.toLocaleString()}` : 'N/A'}
                                 </p>
-                                {getValueIndicator(value, highestRental, true)}
+                                {getValueIndicator(value, highestRevenue, true)}
                               </div>
                             );
                           })}
@@ -285,8 +280,8 @@ export function ComparisonPanel({ properties, open, onClose, userRole }: Compari
                           {properties.map((property) => (
                             <div key={property.id} className="bg-muted/30 rounded-lg p-3">
                               <p className="text-sm">
-                                {property.financials?.propertyValue 
-                                  ? `R ${property.financials.propertyValue.toLocaleString()}` 
+                                {property.financial?.currentValue 
+                                  ? `R ${property.financial.currentValue.toLocaleString()}` 
                                   : 'N/A'}
                               </p>
                             </div>
@@ -316,18 +311,14 @@ export function ComparisonPanel({ properties, open, onClose, userRole }: Compari
                           })}
                         </div>
 
-                        {/* Operating Expenses */}
+                        {/* ROI */}
                         <div className="grid gap-4" style={{ gridTemplateColumns: `200px repeat(${properties.length}, 1fr)` }}>
                           <div className="flex items-center text-sm font-medium text-muted-foreground">
-                            Operating Expenses
+                            Return on Investment
                           </div>
                           {properties.map((property) => (
                             <div key={property.id} className="bg-muted/30 rounded-lg p-3">
-                              <p className="text-sm">
-                                {property.financials?.operatingExpenses 
-                                  ? `R ${property.financials.operatingExpenses.toLocaleString()}` 
-                                  : 'N/A'}
-                              </p>
+                              <p className="text-sm">{property.metrics.roi}%</p>
                             </div>
                           ))}
                         </div>

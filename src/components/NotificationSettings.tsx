@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import {
   Dialog,
@@ -9,7 +10,6 @@ import {
 import { Label } from './ui/label';
 import { Switch } from './ui/switch';
 import { Separator } from './ui/separator';
-import { Badge } from './ui/badge';
 import {
   AlertTriangle,
   Info,

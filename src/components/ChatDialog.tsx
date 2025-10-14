@@ -1,8 +1,8 @@
+'use client';
 import { useState, useRef, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Textarea } from './ui/textarea';
-import { ScrollArea } from './ui/scroll-area';
 import { 
   Sparkles, 
   ArrowUp, 
@@ -31,7 +31,7 @@ interface Message {
   actions?: Array<{
     label: string;
     type: 'view-property' | 'show-map' | 'view-financials';
-    data?: any;
+    data?: unknown;
   }>;
 }
 
@@ -52,7 +52,7 @@ export function ChatDialog({
   userRole,
   currentView,
   selectedProperty,
-  onPropertySelect,
+  onPropertySelect: _onPropertySelect,
   onViewChange,
   onMinimize
 }: ChatDialogProps) {
@@ -107,7 +107,7 @@ export function ChatDialog({
       ],
     };
 
-    return basePrompts[currentView] || basePrompts.dashboard;
+    return basePrompts[currentView] ?? basePrompts.dashboard;
   };
 
   const simulateAIResponse = (userMessage: string): Message => {
@@ -263,7 +263,7 @@ export function ChatDialog({
             </div>
 
             {/* Context Chips */}
-            {(selectedProperty || currentView) && (
+            {(Boolean(selectedProperty) || Boolean(currentView)) && (
               <div className="flex items-center gap-2 mt-3">
                 <span className="text-xs text-muted-foreground">Context:</span>
                 {currentView && (

@@ -1,8 +1,8 @@
+'use client';
 import { useState } from 'react';
-import type { Notification, Property } from '../lib/mockData';
+import type { Notification } from '../lib/mockData';
 import { Button } from './ui/button';
 import { ScrollArea } from './ui/scroll-area';
-import { Separator } from './ui/separator';
 import { Badge } from './ui/badge';
 import { 
   AlertTriangle, 
@@ -71,19 +71,6 @@ export function NotificationPanel({
         return <TrendingUp className="w-5 h-5 text-green-500" />;
       default:
         return <Info className="w-5 h-5 text-muted-foreground" />;
-    }
-  };
-
-  const getBadgeVariant = (type: string): "default" | "secondary" | "destructive" | "outline" => {
-    switch (type) {
-      case 'critical':
-        return 'destructive';
-      case 'warning':
-        return 'default';
-      case 'success':
-        return 'secondary';
-      default:
-        return 'outline';
     }
   };
 
@@ -193,12 +180,12 @@ export function NotificationPanel({
               {filter === 'unread' ? 'No unread notifications' : 'No notifications'}
             </p>
             <p className="text-sm text-muted-foreground mt-1">
-              You're all caught up!
+              You&apos;re all caught up!
             </p>
           </div>
         ) : (
           <div className="divide-y">
-            {filteredNotifications.map((notification, index) => (
+            {filteredNotifications.map((notification) => (
               <button
                 key={notification.id}
                 onClick={() => handleNotificationClick(notification)}

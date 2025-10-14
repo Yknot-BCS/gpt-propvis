@@ -1,6 +1,7 @@
+'use client';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from './ui/card';
-import { TrendingDown, TrendingUp, AlertTriangle, DollarSign } from 'lucide-react';
-import { recentTransactions, properties } from '../lib/mockData';
+import { TrendingDown, TrendingUp, AlertTriangle } from 'lucide-react';
+import { recentTransactions } from '../lib/mockData';
 import { Badge } from './ui/badge';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
@@ -15,9 +16,6 @@ export function FinancialMetrics() {
       maximumFractionDigits: 0,
     }).format(value);
   };
-
-  const activeProperties = properties.filter(p => p.status === 'Active');
-  const totalValue = activeProperties.reduce((sum, p) => sum + p.metrics.value, 0);
 
   // Mock financial data
   const debtMetrics = {

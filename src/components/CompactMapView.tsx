@@ -1,8 +1,9 @@
+'use client';
 import { useEffect, useRef } from 'react';
-import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { properties } from '../lib/mockData';
 import type { Property } from '../lib/mockData';
+import L from 'leaflet';
 
 // Fix for default markers in Leaflet
 // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access

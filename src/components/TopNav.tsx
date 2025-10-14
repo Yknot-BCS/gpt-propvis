@@ -1,6 +1,6 @@
+'use client';
 import { Search, Sparkles, Bell } from 'lucide-react';
 import { Button } from './ui/button';
-import { Badge } from './ui/badge';
 
 interface TopNavProps {
   onSearchClick: () => void;
@@ -14,7 +14,7 @@ export function TopNav({
   onSearchClick,
   onAIAssistantClick,
   onNotificationsClick,
-  selectedPropertyName,
+  selectedPropertyName: _selectedPropertyName,
   unreadNotificationsCount = 0,
 }: TopNavProps) {
   return (

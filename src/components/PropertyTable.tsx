@@ -1,3 +1,4 @@
+'use client';
 import { useState, useMemo } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Input } from './ui/input';
@@ -7,7 +8,7 @@ import { Button } from './ui/button';
 import { Checkbox } from './ui/checkbox';
 import { Search, ArrowUpDown, ArrowUp, ArrowDown, Building2 } from 'lucide-react';
 import { properties } from '../lib/mockData';
-import type { Property } from '../lib/mockData';
+import type { Property, PropertyStatus, PropertyType } from '../lib/mockData';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 
 type SortField = 'name' | 'type' | 'value' | 'occupancy' | 'roi' | 'revenue' | 'region';
@@ -25,8 +26,8 @@ export function PropertyTable({
   onSelectionChange 
 }: PropertyTableProps) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [typeFilter, setTypeFilter] = useState<'all' | 'Office' | 'Industrial' | 'Retail'>('all');
-  const [statusFilter, setStatusFilter] = useState<'all' | 'Active' | 'Under Development' | 'Disposed'>('all');
+  const [typeFilter, setTypeFilter] = useState<'all' | PropertyType>('all');
+  const [statusFilter, setStatusFilter] = useState<'all' | PropertyStatus>('all');
   const [sortField, setSortField] = useState<SortField>('value');
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
 
@@ -117,8 +118,8 @@ export function PropertyTable({
     const sorted = [...filteredProperties];
     
     sorted.sort((a, b) => {
-      let aValue: any;
-      let bValue: any;
+      let aValue: string | number;
+      let bValue: string | number;
 
       switch (sortField) {
         case 'name':
@@ -153,15 +154,16 @@ export function PropertyTable({
           return 0;
       }
 
-      if (typeof aValue === 'string') {
+      if (typeof aValue === 'string' && typeof bValue === 'string') {
         return sortDirection === 'asc' 
           ? aValue.localeCompare(bValue)
           : bValue.localeCompare(aValue);
-      } else {
+      } else if (typeof aValue === 'number' && typeof bValue === 'number') {
         return sortDirection === 'asc' 
           ? aValue - bValue
           : bValue - aValue;
       }
+      return 0;
     });
 
     return sorted;
@@ -210,7 +212,7 @@ export function PropertyTable({
             </div>
 
             <div>
-              <Select value={typeFilter} onValueChange={(value) => setTypeFilter(value as any)}>
+              <Select value={typeFilter} onValueChange={(value) => setTypeFilter(value as PropertyType | 'all')}>
                 <SelectTrigger>
                   <SelectValue placeholder="Property Type" />
                 </SelectTrigger>
@@ -224,7 +226,7 @@ export function PropertyTable({
             </div>
 
             <div>
-              <Select value={statusFilter} onValueChange={(value) => setStatusFilter(value as any)}>
+              <Select value={statusFilter} onValueChange={(value) => setStatusFilter(value as PropertyStatus | 'all')}>
                 <SelectTrigger>
                   <SelectValue placeholder="Status" />
                 </SelectTrigger>

@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import { Building2, Search, Mail, Phone, Calendar, TrendingUp, AlertCircle, CheckCircle, Clock } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
@@ -257,7 +258,7 @@ export function TenantTable({ tenants, onTenantSelect }: TenantTableProps) {
               </SelectContent>
             </Select>
 
-            <Select value={sortBy} onValueChange={(value: any) => setSortBy(value)}>
+            <Select value={sortBy} onValueChange={(value) => setSortBy(value as 'name' | 'rental' | 'area' | 'expiry')}>
               <SelectTrigger className="w-full lg:w-[180px]">
                 <SelectValue placeholder="Sort by" />
               </SelectTrigger>

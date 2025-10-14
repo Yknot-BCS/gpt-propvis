@@ -1,3 +1,4 @@
+'use client';
 import type { Property } from '../lib/mockData';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
@@ -13,7 +14,6 @@ import {
   DollarSign,
   Square,
   Percent,
-  ArrowLeft,
   ExternalLink
 } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';

@@ -1,3 +1,5 @@
+'use client';
+import dynamic from 'next/dynamic';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { TrendingUp, Building2, DollarSign, Percent, ArrowRight, MapPin } from 'lucide-react';
 import { properties, calculatePortfolioMetrics, monthlyPerformance, portfolioByType, regionalDistribution } from '../lib/mockData';
@@ -5,7 +7,12 @@ import type { Property, Notification } from '../lib/mockData';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from 'recharts';
 import { Badge } from './ui/badge';
 import { AlertsSummary } from './AlertsSummary';
-import { CompactMapView } from './CompactMapView';
+
+// Dynamically import CompactMapView to avoid SSR issues with Leaflet
+const CompactMapView = dynamic(() => import('./CompactMapView').then(mod => ({ default: mod.CompactMapView })), {
+  ssr: false,
+  loading: () => <div className="flex items-center justify-center h-64">Loading map...</div>
+});
 
 interface DashboardOverviewProps {
   onPropertySelect?: (property: Property) => void;
