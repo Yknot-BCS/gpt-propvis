@@ -282,7 +282,7 @@ html {
 
 .leaflet-control {
   position: relative;
-  z-index: 800;
+  z-index: 10;
   pointer-events: visiblePainted;
   pointer-events: auto;
 }
@@ -290,7 +290,7 @@ html {
 .leaflet-top,
 .leaflet-bottom {
   position: absolute;
-  z-index: 1000;
+  z-index: 10;
   pointer-events: none;
 }
 
