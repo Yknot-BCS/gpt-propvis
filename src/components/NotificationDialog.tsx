@@ -1,7 +1,5 @@
 'use client';
 import { useEffect, useRef } from 'react';
-import { X } from 'lucide-react';
-import { Button } from './ui/button';
 import { cn } from '@/lib/utils';
 
 interface NotificationDialogProps {
@@ -68,16 +66,6 @@ export function NotificationDialog({
         )}
         style={{ animation: 'slideInFromTop 200ms ease-out' }}
       >
-        {/* Close button */}
-        <Button
-          variant="ghost"
-          size="sm"
-          onClick={onClose}
-          className="absolute top-2 right-2 z-10 w-8 h-8 p-0 rounded-full"
-        >
-          <X className="w-4 h-4" />
-        </Button>
-
         {/* Content */}
         <div className="flex-1 flex flex-col overflow-hidden">
           {children}

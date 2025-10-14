@@ -106,7 +106,7 @@ export function NotificationPanel({
     <div className="flex flex-col h-full">
       {/* Header */}
       <div className="p-4 border-b space-y-3 flex-shrink-0">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between ">
           <div>
             <h3>Notifications</h3>
             {unreadCount > 0 && (
@@ -115,7 +115,7 @@ export function NotificationPanel({
               </p>
             )}
           </div>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-3 p-2">
             {onSettingsClick && (
               <Button variant="ghost" size="sm" onClick={onSettingsClick} title="Notification settings">
                 <Settings2 className="w-4 h-4" />

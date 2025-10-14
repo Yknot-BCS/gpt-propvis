@@ -5,14 +5,6 @@ import { properties } from '../lib/mockData';
 import type { Property } from '../lib/mockData';
 import L from 'leaflet';
 
-// Fix for default markers in Leaflet
-// eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
-delete (L.Icon.Default.prototype as any)._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png',
-  iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png',
-  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
-});
 
 interface CompactMapViewProps {
   onPropertySelect?: (property: Property) => void;
@@ -20,9 +12,8 @@ interface CompactMapViewProps {
 }
 
 export function CompactMapView({ onPropertySelect, height = 400 }: CompactMapViewProps) {
-  const mapRef = useRef<L.Map | null>(null);
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
-  const markersRef = useRef<L.Marker[]>([]);
+  const mapRef = useRef<L.Map | null>(null);
 
   const activeProperties = properties.filter(p => p.status === 'Active');
 
@@ -32,137 +23,84 @@ export function CompactMapView({ onPropertySelect, height = 400 }: CompactMapVie
     const size = 24;
     
     return L.divIcon({
-      className: 'custom-marker',
-      html: `
-        <div style="position: relative;">
-          <div style="
-            width: ${size}px;
-            height: ${size}px;
-            background-color: ${color};
-            border-radius: 50%;
-            border: 2px solid white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-          "></div>
-        </div>
-      `,
+      html: `<div style="background-color: ${color}; width: ${size}px; height: ${size}px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>`,
+      className: 'custom-marker-icon',
       iconSize: [size, size],
       iconAnchor: [size / 2, size / 2],
     });
   };
 
-  // Initialize map
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
 
-    const timer = setTimeout(() => {
-      if (!mapContainerRef.current) return;
+    // Calculate center from active properties
+    const center: [number, number] = activeProperties.length > 0
+      ? [
+          activeProperties.reduce((sum, p) => sum + p.location.lat, 0) / activeProperties.length,
+          activeProperties.reduce((sum, p) => sum + p.location.lng, 0) / activeProperties.length,
+        ]
+      : [-26.2041, 28.0473];
 
-      try {
-        // Create map centered on South Africa
-        const map = L.map(mapContainerRef.current, {
-          center: [-28.5, 24.5],
-          zoom: 5,
-          zoomControl: true,
-          scrollWheelZoom: false,
-          dragging: true,
-          minZoom: 5,
-          maxZoom: 12,
-          preferCanvas: false,
+    // Initialize the map on the div with a given center and zoom
+    const map = L.map(mapContainerRef.current, {
+      center: center,
+      zoom: 18,
+      maxZoom: 19,
+      minZoom: 3,
+    });
+
+    // Add OpenStreetMap tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19,
+    }).addTo(map);
+
+    // Add markers for each property
+    activeProperties.forEach((property) => {
+      const marker = L.marker(
+        [property.location.lat, property.location.lng],
+        { icon: createMarkerIcon(property.type) }
+      ).addTo(map);
+
+      // Add popup with property details
+      marker.bindPopup(`
+        <div style="font-family: system-ui; min-width: 150px;">
+          <strong style="font-size: 14px;">${property.name}</strong>
+          <p style="margin: 4px 0; color: #666; font-size: 12px;">${property.location.address}</p>
+          <p style="margin: 4px 0; font-size: 12px;">
+            <span style="color: #666;">Type:</span> ${property.type}
+          </p>
+        </div>
+      `);
+
+      // Add click handler
+      if (onPropertySelect) {
+        marker.on('click', () => {
+          onPropertySelect(property);
         });
-
-        // Add OpenStreetMap tile layer
-        const tileLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; OpenStreetMap',
-          maxZoom: 19,
-          minZoom: 1,
-          crossOrigin: true,
-        });
-
-        tileLayer.addTo(map);
-        mapRef.current = map;
-
-        // Force map to recalculate its size
-        setTimeout(() => {
-          map.invalidateSize();
-        }, 100);
-        
-        setTimeout(() => {
-          map.invalidateSize();
-        }, 300);
-
-        // Add animation keyframes for markers
-        const style = document.createElement('style');
-        style.textContent = `
-          .compact-map-marker {
-            transition: transform 0.2s;
-          }
-          .compact-map-marker:hover {
-            transform: scale(1.2);
-            z-index: 1000 !important;
-          }
-        `;
-        document.head.appendChild(style);
-      } catch (error) {
-        console.error('Error initializing compact map:', error);
       }
-    }, 100);
+    });
 
+    // Fit bounds to show all markers with maximum zoom
+    if (activeProperties.length > 0) {
+      const bounds = L.latLngBounds(
+        activeProperties.map(p => [p.location.lat, p.location.lng])
+      );
+      map.fitBounds(bounds, { 
+        padding: [20, 20],
+        maxZoom: 19 // Zoom in close to see building details
+      });
+    }
+
+    mapRef.current = map;
+
+    // Cleanup on unmount
     return () => {
-      clearTimeout(timer);
       if (mapRef.current) {
         mapRef.current.remove();
         mapRef.current = null;
       }
     };
-  }, []);
-
-  // Add markers for all active properties
-  useEffect(() => {
-    if (!mapRef.current) return;
-
-    // Clear existing markers
-    markersRef.current.forEach(marker => marker.remove());
-    markersRef.current = [];
-
-    if (activeProperties.length === 0) return;
-
-    // Add markers for properties
-    const bounds = L.latLngBounds([]);
-    
-    activeProperties.forEach((property) => {
-      const icon = createMarkerIcon(property.type);
-      const latLng = L.latLng(property.location.lat, property.location.lng);
-
-      const marker = L.marker(latLng, {
-        icon,
-      });
-
-      // Add click handler
-      marker.on('click', () => {
-        if (onPropertySelect) {
-          onPropertySelect(property);
-        }
-      });
-
-      // Add simple tooltip on hover
-      marker.bindTooltip(property.name, {
-        direction: 'top',
-        offset: [0, -12],
-      });
-
-      marker.addTo(mapRef.current!);
-      markersRef.current.push(marker);
-      
-      bounds.extend(latLng);
-    });
-
-    // Fit map to show all markers
-    if (activeProperties.length > 0) {
-      mapRef.current.fitBounds(bounds, {
-        padding: [30, 30],
-        maxZoom: 6,
-      });
-    }
   }, [activeProperties, onPropertySelect]);
 
   return (

@@ -482,3 +482,21 @@ html {
   background: transparent !important;
   border: none !important;
 }
+
+/* Custom marker icon styles */
+.custom-marker-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Pulse animation for selected markers */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}

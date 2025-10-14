@@ -9,10 +9,9 @@ import { properties, tenants } from '@/lib/mockData';
 import { usePortfolio } from './PortfolioProvider';
 import { cn } from '@/lib/utils';
 
-// Dynamically import MapView to avoid SSR issues with Leaflet
 const MapView = dynamic(() => import('@/components/MapView').then(mod => ({ default: mod.MapView })), {
   ssr: false,
-  loading: () => <div className="flex items-center justify-center h-96">Loading map...</div>
+  loading: () => <div className="flex items-center justify-center h-64">Loading map...</div>
 });
 
 export function MainContent() {

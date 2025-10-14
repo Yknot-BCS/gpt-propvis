@@ -1,5 +1,7 @@
 // Mock data for Growthpoint property portfolio
 
+import type { PropertyLocation } from "@/components/PropertyMap";
+
 export type PropertyType = 'Office' | 'Industrial' | 'Retail';
 export type PropertyStatus = 'Active' | 'Under Development' | 'Disposed';
 
@@ -769,3 +771,167 @@ export const tenants: Tenant[] = [
     paymentHistory: 'Occasional Delays',
   },
 ];
+
+export const Properties: PropertyLocation[] = [
+  {
+    id: '1',
+    name: 'Sandton City Office Complex',
+    address: 'Sandton City, Johannesburg, GP',
+    latitude: -26.1076,
+    longitude: 28.0567,
+    value: 'R125,000,000',
+    occupancy: 94,
+    status: 'Active',
+    type: 'Commercial',
+    tenants: 45,
+    monthlyRevenue: 'R2,100,000',
+    yearBuilt: 2018,
+    size: '15,000 sqm',
+    description: 'Premium office space in the heart of Sandton business district'
+  },
+  {
+    id: '2',
+    name: 'Cape Town Waterfront Mall',
+    address: 'V&A Waterfront, Cape Town, WC',
+    latitude: -33.9019,
+    longitude: 18.4232,
+    value: 'R89,500,000',
+    occupancy: 89,
+    status: 'Active',
+    type: 'Commercial',
+    tenants: 78,
+    monthlyRevenue: 'R1,850,000',
+    yearBuilt: 2015,
+    size: '22,000 sqm',
+    description: 'Upscale retail and entertainment complex with ocean views'
+  },
+  {
+    id: '3',
+    name: 'Durban Industrial Park',
+    address: 'Pinetown, Durban, KZN',
+    latitude: -29.8587,
+    longitude: 31.0218,
+    value: 'R45,000,000',
+    occupancy: 0,
+    status: 'Vacant',
+    type: 'Industrial',
+    tenants: 0,
+    monthlyRevenue: 'R0',
+    yearBuilt: 2020,
+    size: '8,500 sqm',
+    description: 'Modern industrial facility ready for manufacturing operations'
+  },
+  {
+    id: '4',
+    name: 'Pretoria Government Complex',
+    address: 'Church Street, Pretoria, GP',
+    latitude: -25.7479,
+    longitude: 28.2293,
+    value: 'R67,500,000',
+    occupancy: 76,
+    status: 'Active',
+    type: 'Commercial',
+    tenants: 12,
+    monthlyRevenue: 'R980,000',
+    yearBuilt: 2012,
+    size: '12,000 sqm',
+    description: 'Professional office building serving government agencies'
+  },
+  {
+    id: '5',
+    name: 'Port Elizabeth Residential Complex',
+    address: 'Summerstrand, Port Elizabeth, EC',
+    latitude: -33.9608,
+    longitude: 25.6022,
+    value: 'R23,800,000',
+    occupancy: 82,
+    status: 'Active',
+    type: 'Residential',
+    tenants: 156,
+    monthlyRevenue: 'R645,000',
+    yearBuilt: 2019,
+    size: '5,200 sqm',
+    description: 'Luxury beachfront apartments with modern amenities'
+  },
+  {
+    id: '6',
+    name: 'Bloemfontein Mixed Development',
+    address: 'Westdene, Bloemfontein, FS',
+    latitude: -29.0852,
+    longitude: 26.1596,
+    value: 'R34,200,000',
+    occupancy: 65,
+    status: 'Under Construction',
+    type: 'Mixed Use',
+    tenants: 23,
+    monthlyRevenue: 'R420,000',
+    yearBuilt: 2023,
+    size: '9,800 sqm',
+    description: 'Mixed-use development with retail and residential components'
+  },
+  {
+    id: '7',
+    name: 'Polokwane Shopping Centre',
+    address: 'CBD, Polokwane, LP',
+    latitude: -23.9045,
+    longitude: 29.4689,
+    value: 'R56,800,000',
+    occupancy: 92,
+    status: 'Active',
+    type: 'Commercial',
+    tenants: 67,
+    monthlyRevenue: 'R1,200,000',
+    yearBuilt: 2019,
+    size: '18,500 sqm',
+    description: 'Modern shopping centre with major retail anchors and entertainment facilities'
+  },
+  {
+    id: '8',
+    name: 'Nelspruit Industrial Complex',
+    address: 'Industrial Area, Nelspruit, MP',
+    latitude: -25.4748,
+    longitude: 30.9703,
+    value: 'R28,500,000',
+    occupancy: 0,
+    status: 'Maintenance',
+    type: 'Industrial',
+    tenants: 0,
+    monthlyRevenue: 'R0',
+    yearBuilt: 2017,
+    size: '12,000 sqm',
+    description: 'Heavy industrial facility undergoing major maintenance and upgrades'
+  },
+  {
+    id: '9',
+    name: 'Kimberley Residential Estate',
+    address: 'Riviera, Kimberley, NC',
+    latitude: -28.7386,
+    longitude: 24.7633,
+    value: 'R18,900,000',
+    occupancy: 88,
+    status: 'Active',
+    type: 'Residential',
+    tenants: 124,
+    monthlyRevenue: 'R380,000',
+    yearBuilt: 2021,
+    size: '6,200 sqm',
+    description: 'Luxury residential complex with modern amenities and security features'
+  },
+  {
+    id: '10',
+    name: 'East London Office Tower',
+    address: 'Beachfront, East London, EC',
+    latitude: -33.0292,
+    longitude: 27.8546,
+    value: 'R42,300,000',
+    occupancy: 76,
+    status: 'Active',
+    type: 'Commercial',
+    tenants: 34,
+    monthlyRevenue: 'R890,000',
+    yearBuilt: 2016,
+    size: '14,800 sqm',
+    description: 'Premium office space with ocean views and modern facilities'
+  }
+];
+

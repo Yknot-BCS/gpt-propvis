@@ -1,18 +1,10 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
 import { properties } from '../lib/mockData';
 import type { Property } from '../lib/mockData';
-import L from 'leaflet';
 
-// Fix for default markers in Leaflet
-// eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
-delete (L.Icon.Default.prototype as any)._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png',
-  iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png',
-  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
-});
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 
@@ -40,137 +32,73 @@ export function MapView({ selectedProperty, onPropertySelect }: MapViewProps) {
     }).format(value);
   };
 
-  // Create custom marker icons for different property types
-  const createMarkerIcon = (type: string, isSelected: boolean) => {
-    const color = type === 'Office' ? '#3b82f6' : type === 'Industrial' ? '#f97316' : '#22c55e';
-    const size = isSelected ? 40 : 32;
-    
-    return L.divIcon({
-      className: 'custom-marker',
-      html: `
-        <div style="position: relative;">
-          <div style="
-            width: ${size}px;
-            height: ${size}px;
-            background-color: ${color};
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            ${isSelected ? 'box-shadow: 0 0 0 4px rgba(3, 2, 19, 0.3);' : ''}
-            transition: all 0.2s;
-          ">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect width="18" height="18" x="3" y="3" rx="2"/>
-              <path d="M3 9h18"/>
-              <path d="M9 21V9"/>
-            </svg>
-          </div>
-          ${isSelected ? `
-            <div style="
-              position: absolute;
-              top: -4px;
-              right: -4px;
-              width: 16px;
-              height: 16px;
-              background-color: #030213;
-              border-radius: 50%;
-              animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-            "></div>
-          ` : ''}
-        </div>
-      `,
-      iconSize: [size, size],
-      iconAnchor: [size / 2, size / 2],
-    });
-  };
-
   // Initialize map
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
 
-    // Small delay to ensure container is rendered
-    const timer = setTimeout(() => {
-      if (!mapContainerRef.current) return;
+    // Calculate center from active properties
+    const activeProps = properties.filter(p => p.status === 'Active');
+    const center: [number, number] = activeProps.length > 0
+      ? [
+          activeProps.reduce((sum, p) => sum + p.location.lat, 0) / activeProps.length,
+          activeProps.reduce((sum, p) => sum + p.location.lng, 0) / activeProps.length,
+        ]
+      : [-26.2041, 28.0473]; // Johannesburg default
 
-      try {
-        // Create map centered on South Africa
-        const map = L.map(mapContainerRef.current, {
-          center: [-28.5, 24.5],
-          zoom: 5,
-          zoomControl: true,
-          scrollWheelZoom: true,
-          minZoom: 5,
-          maxZoom: 18,
-          preferCanvas: false,
-        });
+    // Initialize the map on the div with a given center and zoom
+    const map = L.map(mapContainerRef.current, {
+      center: center,
+      zoom: 13,
+      maxZoom: 19,
+      minZoom: 3,
+    });
 
-        // Add OpenStreetMap tile layer with better options
-        const tileLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-          maxZoom: 19,
-          minZoom: 1,
-          crossOrigin: true,
-        });
+    // Add OpenStreetMap tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19,
+    }).addTo(map);
 
-        tileLayer.addTo(map);
+    mapRef.current = map;
 
-        // Debug tile loading
-        tileLayer.on('tileerror', (error) => {
-          console.error('Tile loading error:', error);
-        });
-
-        tileLayer.on('tileload', () => {
-          console.log('Tile loaded successfully');
-        });
-
-        mapRef.current = map;
-
-        // Force map to recalculate its size multiple times
-        setTimeout(() => {
-          map.invalidateSize();
-        }, 100);
-        
-        setTimeout(() => {
-          map.invalidateSize();
-        }, 300);
-
-        // Add animation keyframes for ping effect
-        const style = document.createElement('style');
-        style.textContent = `
-          @keyframes ping {
-            75%, 100% {
-              transform: scale(2);
-              opacity: 0;
-            }
-          }
-          .leaflet-container {
-            background: #e5e7eb;
-            font-family: inherit;
-          }
-          .leaflet-popup-content-wrapper {
-            border-radius: 0.5rem;
-          }
-          .custom-marker {
-            background: transparent !important;
-            border: none !important;
-          }
-        `;
-        document.head.appendChild(style);
-      } catch (error) {
-        console.error('Error initializing map:', error);
-      }
-    }, 100);
-
+    // Cleanup on unmount
     return () => {
-      clearTimeout(timer);
       if (mapRef.current) {
         mapRef.current.remove();
         mapRef.current = null;
       }
     };
   }, []);
+
+
+
+  // Create custom marker icons for different property types
+  const createMarkerIcon = (type: string, isSelected: boolean = false) => {
+    const colors = {
+      'Office': '#3b82f6',
+      'Industrial': '#f97316',
+      'Retail': '#22c55e'
+    };
+    const color = colors[type as keyof typeof colors] || '#3b82f6';
+    const size = isSelected ? 32 : 24;
+    const borderWidth = isSelected ? 3 : 2;
+    
+    return L.divIcon({
+      html: `<div style="
+        background-color: ${color}; 
+        width: ${size}px; 
+        height: ${size}px; 
+        border-radius: 50%; 
+        border: ${borderWidth}px solid white; 
+        box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+        ${isSelected ? 'animation: pulse 2s infinite;' : ''}
+      "></div>`,
+      className: 'custom-marker-icon',
+      iconSize: [size, size],
+      iconAnchor: [size / 2, size / 2],
+      popupAnchor: [0, -size / 2],
+    });
+  };
 
   // Update markers when properties or selection changes
   useEffect(() => {
@@ -255,9 +183,39 @@ export function MapView({ selectedProperty, onPropertySelect }: MapViewProps) {
   }, [selectedProperty]);
 
   return (
-    <div className="h-full">
-      {/* Map Container - Full Width */}
-      <Card className="h-full">
+    <div className="h-full space-y-6">
+      {/* Stats Card */}
+      <Card>
+        <CardContent className="pt-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+              <p className="text-sm text-muted-foreground mb-1">Viewing</p>
+              <p className="text-3xl font-semibold">{filteredProperties.length}</p>
+              <p className="text-sm text-muted-foreground">Properties</p>
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground mb-1">Total Value</p>
+              <p className="text-3xl font-semibold">
+                {formatCurrency(
+                  filteredProperties.reduce((sum, p) => sum + p.metrics.value, 0)
+                )}
+              </p>
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground mb-1">Average Size</p>
+              <p className="text-3xl font-semibold">
+                {filteredProperties.length > 0
+                  ? Math.round(filteredProperties.reduce((sum, p) => sum + p.metrics.size, 0) / filteredProperties.length).toLocaleString()
+                  : 0}
+              </p>
+              <p className="text-sm text-muted-foreground">m² GLA</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Map Container */}
+      <Card className="flex-1">
           <CardHeader>
             <div className="flex items-center justify-between">
               <CardTitle>Property Portfolio Map</CardTitle>
@@ -313,19 +271,6 @@ export function MapView({ selectedProperty, onPropertySelect }: MapViewProps) {
                     <div className="w-4 h-4 rounded-full bg-green-500" />
                     <span className="text-sm">Retail</span>
                   </div>
-                </div>
-              </div>
-
-              {/* Stats Overlay */}
-              <div className="absolute top-4 left-4 bg-background/95 backdrop-blur-sm p-4 rounded-lg shadow-lg z-[1000]">
-                <div className="space-y-1">
-                  <p className="text-sm text-muted-foreground">Viewing</p>
-                  <p className="text-2xl">{filteredProperties.length} Properties</p>
-                  <p className="text-sm text-muted-foreground">
-                    {formatCurrency(
-                      filteredProperties.reduce((sum, p) => sum + p.metrics.value, 0)
-                    )}
-                  </p>
                 </div>
               </div>
             </div>
