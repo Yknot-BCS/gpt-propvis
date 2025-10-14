@@ -76,7 +76,7 @@ export function MapView({ selectedProperty, onPropertySelect }: MapViewProps) {
 
 
   // Create custom marker icons for different property types
-  const createMarkerIcon = (type: string, isSelected: boolean = false) => {
+  const createMarkerIcon = (type: string, isSelected: boolean) => {
     const colors = {
       'Office': '#3b82f6',
       'Industrial': '#f97316',
