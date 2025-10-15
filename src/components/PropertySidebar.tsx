@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useRef } from 'react';
-import type { Property } from '../lib/mockData';
+import type { Property } from '../lib/data';
 import { Button } from './ui/button';
 import { Pin, PinOff, X, Sparkles } from 'lucide-react';
 import { PropertyDetailView } from './PropertyDetailView';

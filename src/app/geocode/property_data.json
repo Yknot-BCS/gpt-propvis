@@ -1,0 +1,2477 @@
+[
+  {
+    "id": "P001",
+    "name": "ANSLOW PHASE 2",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.0580934,
+      "lng": 28.0215693,
+      "address": "8 ANSLOW CRESCENT BRYANSTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Anslow Park is a pristine, 4 Green Star rated office block situated in the prestigious business hub of Bryanston, offering close proximity to major amenities, easy access to the N1 highway, and excellent connectivity to the Sandton CBD. The building caters to various office size requirements, with each space enjoying exceptional views of Sandton. Designed for energy efficiency, it delivers significant savings on water and electricity, promotes improved indoor air quality, and enhances overall staff productivity. Additional features include 24-hour security and fibre connectivity.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Heather Rush",
+      "phone": "+27 87 353 4702",
+      "email": "hrlang@growthpoint.co.za"
+    },
+    "property_code": "2928"
+  },
+  {
+    "id": "P002",
+    "name": "ARTERIAL INDUSTRIAL ESTATE",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -33.9576564,
+      "lng": 18.6882357,
+      "address": "61 RANGE ROAD BLACKHEATH",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "Cape Town",
+      "description": "This new industrial development, ideally located along the Stellenbosch Arterial Road in the heart of the established Blackheath industrial node, offers ultra-modern, high-spec industrial units designed to meet diverse manufacturing, storage, and logistics needs. With 24-hour security, access control, and proximity to major arterial routes, the airport, and public transport hubs, the development ensures both convenience and security. Units feature an optimal office-to-warehouse ratio, generous yard space, fire sprinklers, a minimum eaves height of 9m, and both on-grade and docking-height roller shutter doors. The site is water and energy efficient, promoting lower operating costs, and is walking distance from Zevenwacht Shopping Centre in Kuils River. Unit sizes vary, with the flexibility to combine spaces for larger requirements.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Sedica Knight",
+      "phone": "+27 87 353 4751",
+      "email": "sknight@growthpoint.co.za"
+    },
+    "property_code": "2203"
+  },
+  {
+    "id": "P003",
+    "name": "PINMILL FARM",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1018824,
+      "lng": 28.073859,
+      "address": "164 KATHERINE STREET SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Pinmill Office Park is a green and vibrant office park set within beautifully landscaped gardens, offering excellent exposure onto Katherine Street and a prime location for businesses. Its close proximity to Rea Vaya and Gautrain bus routes ensures easy access to public transport, while being just moments away from major CBD amenities enhances convenience for tenants and visitors alike. The park features easy access to the M1 freeway, 24/7 security, fibre connectivity, full back-up power and water, as well as standalone building opportunities.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "1042"
+  },
+  {
+    "id": "P004",
+    "name": "TRADE PARK",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -29.7041285,
+      "lng": 31.0379475,
+      "address": "54 SIPHOSETHU ROAD MOUNT EDGECOMBE",
+      "node": null,
+      "region": "KwaZulu-Natal"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "DURBAN",
+      "description": "Phase 1 of this development was completed in 2019, delivering 15 high-quality industrial units ranging from 1,000m² to 2,000m². Building on this success, Phase 2 has now been completed, adding four state-of-the-art units between 4,500m² and 6,500m². These larger spaces are designed to accommodate a wide range of logistics and warehousing needs. Ideally positioned in Mount Edgecombe, one of Durban’s most sought-after logistics nodes, Trade Park enjoys excellent connectivity thanks to the newly developed C3 Corridor road, the nearby Cornubia growth node, and recent upgrades to the N2 and M41 interchange. With industrial land becoming increasingly scarce around Durban Harbour, this location offers strategic access and long-term value. The development includes a three-phase power supply ranging from 75 to 190 amps, generous stacking heights, and cantilevered roof canopies over all roller shutter doors to ensure optimal protection during loading and offloading. Trade Park is a future-ready space, perfectly suited for businesses seeking visibility, accessibility, and operational efficiency in a prime logistics hub.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Craig Davis",
+      "phone": "+27 87 353 4742",
+      "email": "cdavis@growthpoint.co.za"
+    },
+    "property_code": "2198"
+  },
+  {
+    "id": "P005",
+    "name": "THE PARK ON 16TH BLOCKS ABC",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -25.9678809,
+      "lng": 28.1335606,
+      "address": "789 - 16TH ROAD RANDJESPARK",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "MIDRAND",
+      "description": "This pristine office park is ideally situated on the vibrant 16th Street in Midrand, providing effortless access to the N1 highway and key transportation routes, including Gautrain and bus services. Nestled within beautifully landscaped gardens, the park comprises six buildings that can be exclusively tenanted by a single client, offering both privacy and prominence. It features 24-hour security, fibre connectivity, and is conveniently located near the Mall of Africa.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Leah Smit",
+      "phone": "+27 87 353 4703",
+      "email": "lsmit@growthpoint.co.za"
+    },
+    "property_code": "2461"
+  },
+  {
+    "id": "P006",
+    "name": "THE PARK ON 16TH BLOCKS DEF",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -25.9678809,
+      "lng": 28.1335606,
+      "address": "789 - 16TH ROAD RANDJESPARK",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "MIDRAND",
+      "description": "This pristine office park is ideally situated on the vibrant 16th Street in Midrand, providing effortless access to the N1 highway and key transportation routes, including Gautrain and bus services. Nestled within beautifully landscaped gardens, the park comprises six buildings that can be exclusively tenanted by a single client, offering both privacy and prominence. It features 24-hour security, fibre connectivity, and is conveniently located near the Mall of Africa.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Leah Smit",
+      "phone": "+27 87 353 4703",
+      "email": "lsmit@growthpoint.co.za"
+    },
+    "property_code": "2462"
+  },
+  {
+    "id": "P007",
+    "name": "THE TOWERS",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.108437,
+      "lng": 28.0490978,
+      "address": "15 ALICE LANE SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "The Towers offers premium-grade office space in an iconic glass and steel building in the heart of Sandton, directly opposite Sandton City and within walking distance of top hotels, restaurants, the Gautrain, and Benmore Gardens. This Green Star rated landmark features 16 stories of office space above a 6-level basement parkade, with a canteen and various amenities on the ground floor. Already home to several blue-chip tenants, the building includes access control and security, fibre connectivity, and full back-up power and water systems.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "7026"
+  },
+  {
+    "id": "P008",
+    "name": "THE PLACE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.11,
+      "lng": 28.0489161,
+      "address": "1 SANDTON DRIVE SANDOWN SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Located in the prestigious Alice Lane precinct, this prime property offers one of Johannesburg's most sought-after office addresses. Recently refurbished to high standards, it features modern finishes, an impressive lobby, excellent views, and ample client and visitor parking. The building is equipped with full back-up power, back-up water, energy-efficient lighting, and an HVAC system that lowers operational costs. Tenants benefit from an array of on-site amenities including a nurse station, mother's room, carwash service, shoeshine, eatery, nail bar, and coffee shop. With 24-hour security, free Wi-Fi in common areas, newly upgraded shared spaces, and a bridge to Sandton City Mall coming soon, it also enjoys a convenient location within walking distance of the Gautrain and Nelson Mandela Square.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "2476"
+  },
+  {
+    "id": "P009",
+    "name": "AFRICAN PRODUCTS",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.1567627,
+      "lng": 28.1664249,
+      "address": "DICK KEMP STREET MEADOWDALE EDENVALE",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "Situated in the prominent industrial hub of Meadowdale in Edenvale, this development boasts a prime location with excellent access to major amenities and all key transport routes. The offices offer prominent highway frontage, providing outstanding branding opportunities for tenants, and can be sub-divided into smaller office units to suit various business needs.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Nicky Whiting",
+      "phone": "+27 87 353 4711",
+      "email": "nwhiting@growthpoint.co.za"
+    },
+    "property_code": "2403"
+  },
+  {
+    "id": "P010",
+    "name": "CASCADE CLOSE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.0123943,
+      "lng": 28.1130177,
+      "address": "1334 HOWICK CLOSE VORNA VALLEY EXT 21",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "MIDRAND",
+      "description": "Waterfall Office Park caters to both corporates and small businesses within a well-balanced ecosystem of professionals and companies. The park is home to a diverse mix of international firms, multi-region companies, and professional service and IT-related businesses serving various sectors of the national economy. This freestanding property, which is set to undergo façade upgrades, offers excellent highway visibility, 24-hour security, Wi-Fi connectivity, and a prime location near the N1 highway, Gautrain station, and the Mall of Africa.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Leah Smit",
+      "phone": "+27 87 353 4703",
+      "email": "lsmit@growthpoint.co.za"
+    },
+    "property_code": "2456"
+  },
+  {
+    "id": "P011",
+    "name": "GOLF PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -33.9469399,
+      "lng": 18.4860443,
+      "address": "RAAPENBERG ROAD MOWBRAY",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Cape Town",
+      "description": "Golf Park, conveniently located in Mowbray just off the N2, offers secure and easily accessible A-grade office space with excellent connectivity to the N2, M3, and M5, as well as nearby bus, taxi, and train stations. The park features 24/7 security and access control, with select units equipped with backup generators to ensure uninterrupted power during loadshedding. Tenants enjoy proximity to local amenities such as Howards Centre, Spar, and the Cattle Baron, while the beautifully landscaped gardens and stunning mountain views from certain balconies provide a serene working environment. Additional features include highway access, public transport convenience, and fibre connectivity.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Andrew Kendall",
+      "phone": "+27 87 353 4752",
+      "email": "akendall@growthpoint.co.za"
+    },
+    "property_code": "3715"
+  },
+  {
+    "id": "P012",
+    "name": "BELVEDERE OFFICE PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -33.8661278,
+      "lng": 18.6407394,
+      "address": "BELLA ROSA STREET DURBANVILLE",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Cape Town",
+      "description": "This stunning low-rise office park holds a 4-star Green Rating, reflecting a strong commitment to sustainability while offering a serene and productive work environment. With both open and basement parking available, tenants benefit from convenience and ease of access. The ground and upper floor offices provide breathtaking views of the surrounding area, enhancing the overall workplace experience. Located near major transport routes with public transport options nearby, the park also features 24-hour controlled access for enhanced security, energy-efficient design, fibre connectivity, and excellent highway accessibility.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dirk Bronner",
+      "phone": "+27 87 353 4749",
+      "email": "dbronner@growthpoint.co.za"
+    },
+    "property_code": "2451"
+  },
+  {
+    "id": "P013",
+    "name": "100 WEST STREET",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1102312,
+      "lng": 28.0615485,
+      "address": "100 WEST STREET SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "100 West is a beautiful freestanding property featuring a part double, part triple storey building constructed above a semi-basement parking facility, offering A-grade office accommodation in landscaped gardens along Wierda Road in Sandton. Ideally located within walking distance of Sandton City, close to the Gautrain and major Sandton CBD amenities, the property also provides easy access to the M1 highway. It includes full back-up power, 24-hour security, and a prime position in Johannesburg’s premier business district.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "2164"
+  },
+  {
+    "id": "P014",
+    "name": "EDEN CROSSING",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.1567627,
+      "lng": 28.1664249,
+      "address": "DICK KEMP STREET MEADOWDALE EDENVALE",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "Situated in the prominent industrial hub of Meadowdale in Edenvale, Eden Crossing offers a prime location with excellent access to major transport routes and nearby amenities. This mixed-use development combines retail warehouse, showroom, and shop space, with a variety of warehouse unit sizes available to suit different business needs. With outstanding exposure, easy access to public transport, a diverse tenant mix, ample parking, on-site security, and a niche café, Eden Crossing delivers a convenient and dynamic environment for tenants and visitors alike.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Nicky Whiting",
+      "phone": "+27 87 353 4711",
+      "email": "nwhiting@growthpoint.co.za"
+    },
+    "property_code": "2404"
+  },
+  {
+    "id": "P015",
+    "name": "8 RIVONIA ROAD",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.12694,
+      "lng": 28.04924,
+      "address": "43 CENTRAL AVENUE CNR RIVONIA ROAD ILLOVO",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This prime A-grade low-rise building is located in the heart of Illovo on Rivonia Road, within walking distance of Thrupps Shopping Centre and a range of nearby amenities including hotels, banks, and restaurants. 8 Rivonia features beautifully landscaped gardens and modern common area finishes, making it a highly competitive offering. With easy access to public transport routes and the Gautrain station, the building also offers 24-hour security, energy efficiency, back-up power and water, ensuring both convenience and operational reliability.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2904"
+  },
+  {
+    "id": "P016",
+    "name": "MILL ROAD INDUSTRIAL PARK",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -33.9247279,
+      "lng": 18.6528586,
+      "address": "MILL ROAD BELLVILLE SOUTH",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "Cape Town",
+      "description": "Opposite the well-known Sacks Circle, Mill Road Industrial Park offers warehouse and distribution space with a very generous internal clear height for racking, staging and loading. The warehouses are sprinkler protected at roof level and offer sprinkler tanks and pumps, which have the capacity to accommodate in-rack sprinkler systems.The air conditioned offices are of a contemporary modern design and arearticulated with a dark face brick and attractive, deep-set window and dooropenings.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Sedica Knight",
+      "phone": "+27 87 353 4751",
+      "email": "sknight@growthpoint.co.za"
+    },
+    "property_code": "2161"
+  },
+  {
+    "id": "P017",
+    "name": "11 ADDERLEY",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -33.9230238,
+      "lng": 18.4230263,
+      "address": "11 ADDERLEY STREET",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Cape Town",
+      "description": "This redeveloped building, located adjacent to The Golden Acre shopping centre and within immediate proximity to the bus and train station, has been upgraded to A-grade status and offers excellent amenities for large users. It features brand new central air-conditioning, stylish bathrooms, modern lifts and foyers, and impressive floor plates of over 3000m². A striking internal atrium with glass lifts, red-brick cladding, and wooden balconies overlooking the central space enhances the building’s character, while a walkway bridge conveniently connects the fourth floor to the Golden Acre parking area, offering a parking ratio of 4 bays per 100m².",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "property_code": "3600"
+  },
+  {
+    "id": "P018",
+    "name": "ROUTE 24",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.149252,
+      "lng": 28.175383,
+      "address": "HERMAN ROAD MEADOWDALE EDENVALE",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "Route 24, located in the heart of Meadowdale, offers prime highway exposure and a range of warehouse sizes available for lease. With easy access to both the R24 and N12 highways and just minutes from OR Tambo International Airport, Route 24’s central location ensures seamless connectivity. The park is conveniently close to public transport and local shopping centres, providing added convenience for employees. Accessible from Herman Street and Fleming Street, Route 24 is securely enclosed with palisade fencing and features 24/7 security, offering peace of mind.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Nicky Whiting",
+      "phone": "+27 87 353 4711",
+      "email": "nwhiting@growthpoint.co.za"
+    },
+    "property_code": "1842"
+  },
+  {
+    "id": "P019",
+    "name": "1 MONTGOMERY",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -29.7175005,
+      "lng": 31.0545678,
+      "address": "ILLOVO SUGAR PARK 1 MONTGOMERY DRIVE MOUNT EDGECOMBE, DURBAN",
+      "node": null,
+      "region": "KwaZulu-Natal"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "DURBAN",
+      "description": "Located in the sought-after Illovo Sugar Park at 1 Montgomery Drive, Mount Edgecombe, this low-density A-grade office park offers a secure and professional business environment with multiple office spaces available to let. Ideally positioned just off the R102 with quick access to the N2 Freeway, the park features refurbished interiors in Block B, a parking ratio of 4 bays per 100m² across basement, covered, and open options, and is within walking distance of Flanders Mall and minutes from Gateway Shopping Centre. With competitive rentals and flexible deposit options, the park is set within a thriving commercial and residential hub known for its secure estates, proximity to key transport routes, and convenient access to King Shaka International Airport and the Umhlanga Ridge business district.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Craig Davis",
+      "phone": "+27 87 353 4742",
+      "email": "cdavis@growthpoint.co.za"
+    },
+    "property_code": "2419"
+  },
+  {
+    "id": "P020",
+    "name": "1 SIXTY JAN SMUTS",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.146585,
+      "lng": 28.0358384,
+      "address": "160 JAN SMUTS AVENUE ROSEBANK",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "160 Jan Smuts is a refurbished A-grade high-rise building located in the heart of Rosebank, offering convenient retail outlets on the ground floor and easily accessible visitor parking. Positioned just 1.8km from Rosebank Mall and The Zone, and 1.1km from the Gautrain Station, it provides excellent access to major public transport routes and the M1 via Glenhove. With signage opportunities, backup power, and superb visibility, this centrally located property is within walking distance of malls, hotels, banks, and restaurants, making it an ideal location for modern business operations.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "3545"
+  },
+  {
+    "id": "P021",
+    "name": "138 WEST STREET",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1063863,
+      "lng": 28.0570334,
+      "address": "138 WEST STREET SANDOWN",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "138 West Street is a modern, recently renovated office building with superb finishes, ideally positioned in the heart of the Sandton CBD. Comprising two separate wings and a shared ground-floor reception, the five-storey building includes two levels of basement parking and is perfectly suited for international companies or those with global clients. Located directly opposite the Gautrain station and within walking distance of Sandton City and Nelson Mandela Square, the building also houses the dynamic Workshop17 and an on-site restaurant. Additional features include back-up power and water, 24-hour security, and close proximity to top restaurants, hotels, and retail outlets.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2213"
+  },
+  {
+    "id": "P022",
+    "name": "148 ON KATHERINE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1034797,
+      "lng": 28.0723042,
+      "address": "148 KATHERINE STREET SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "148 Katherine is an iconic, newly refurbished building offering exceptional exposure and signage opportunities onto both Grayston Drive and Katherine Street. With smart features and green efficiencies aimed at lowering utility consumption, it is ideal for businesses seeking open floor plates with fully fitted and furnished office space. The building enjoys excellent public transport access via Gautrain and Rea Vaya bus stops, and is just over 200 metres from the M1 on/off ramp, ensuring seamless connectivity while avoiding CBD traffic. Located near Grayston Shopping Centre and Virgin Active Gym, the property also features generator and back-up water systems, making it a highly convenient and efficient office solution.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "2912"
+  },
+  {
+    "id": "P023",
+    "name": "23 IMPALA ROAD",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1152154,
+      "lng": 28.0511751,
+      "address": "23 IMPALA ROAD CHISLEHURSTON SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "23 Impala is located in a prestigious office park on Impala Road, surrounded by lush landscaped gardens that offer a peaceful retreat while remaining within easy reach of the vibrant Sandton CBD and its wide range of amenities. As one of four independent buildings in the park, it combines affordable rentals with a serene working environment and excellent convenience. The property is within walking distance of various dining options, padel courts, and is close to the Gautrain and Sandton City Shopping Centre. It also features 24-hour security, back-up water supply, and benefits from a new shopping mall currently under development nearby.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "2513"
+  },
+  {
+    "id": "P024",
+    "name": "25 RUDD ROAD",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1306888,
+      "lng": 28.0504781,
+      "address": "25 RUDD ROAD ILLOVO SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Nestled in the vibrant heart of Illovo, 25 Rudd Road offers uninterrupted views of the lush Wanderers Golf Course and superb convenience with its close proximity to Thrupps Centre and Illovo Muse. This recently renovated three-storey building features a refreshed lobby and stylish communal areas, combining modern design with practicality. With easy access to Rosebank, Sandton, and surrounding neighbourhoods, tenants benefit from 24/7 security, backup generator facilities, and a mix of open, shaded, and basement parking bays, making it a secure and well-connected office location.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2444"
+  },
+  {
+    "id": "P025",
+    "name": "28 FRICKER ROAD",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1297827,
+      "lng": 28.0481203,
+      "address": "28 FRICKER ROAD ILLOVO",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This newly refurbished low-rise building in Illovo Boulevard offers a prime location within walking distance of coffee shops, retail offerings, and the Wanderers Golf and Sports Club and cricket stadium. Situated along the Gautrain bus route, the property enjoys excellent connectivity and is set within a secure park, providing peace of mind for tenants. With easy access to the M1 highway via Corlett Drive and close proximity to both the Thrupps Centre and Illovo Square Shopping Centre, the building combines convenience with functionality. Backup power ensures uninterrupted productivity in this well-positioned office environment.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "3704"
+  },
+  {
+    "id": "P026",
+    "name": "33 BREE & 30 WATERKANT",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -33.9192546,
+      "lng": 18.4211488,
+      "address": "33 BREE & 30 WATERKANT STREETS CAPE TOWN",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Cape Town",
+      "description": "30 Waterkant is superbly located in the vibrant Bree Street precinct, surrounded by popular entertainment venues, restaurants, cocktail bars, and coffee shops, offering a lively and convenient setting for businesses. With smaller floor plates ideal for tenants seeking exclusive use of an entire floor, the building provides ample parking, 24-hour security, back-up power, fibre connectivity, and excellent access to public transport and major freeways. Just around the corner, 33 Bree is home to a mix of blue-chip companies, trendy cafés, and every imaginable amenity within walking distance. Known for its sought-after location and premium office space, 33 Bree offers flexible office layouts, up to 5 parking bays per 100m², 24-hour security, back-up power, fibre connectivity, and is Green Star rated, ensuring both environmental efficiency and top-tier business infrastructure.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Chris Mackrill",
+      "phone": "+27 87 353 4748",
+      "email": "cmackrill@growthpoint.co.za"
+    },
+    "property_code": "3570"
+  },
+  {
+    "id": "P027",
+    "name": "33 FRICKER ROAD",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1299853,
+      "lng": 28.0475008,
+      "address": "31 & 33 FRICKER ROAD ILLOVO",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This modern building in Illovo is centrally located with seamless access to both Sandton and Rosebank, and is surrounded by a variety of coffee shops and shopping centres within walking distance. Positioned in a secure park, it offers backup power and water, ensuring uninterrupted operations. The property is conveniently close to Thrupps Centre, Illovo Square, the Wanderers Golf and Sports Club, and the cricket stadium, with quick access to the M1 highway via Corlett Drive, making it an ideal location for businesses seeking convenience, security, and connectivity.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2183"
+  },
+  {
+    "id": "P028",
+    "name": "36 WIERDA ROAD WEST",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1146244,
+      "lng": 28.0542929,
+      "address": "36 WIERDA ROAD WEST WIERDA VALLEY",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This conveniently located office park comprises two buildings within walking distance of Sandton and various public transport options, including the nearby Gautrain. With excellent access to arterial roads and highways, the park offers seamless connectivity for commuters. Surrounded by shopping centres, green spaces, and upmarket dining options, it provides a well-rounded working environment. The landscaped setting and 24-hour security ensure both safety and aesthetic appeal, while the presence of major local and international companies in the area further enhances its appeal as a prime business address.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2178"
+  },
+  {
+    "id": "P029",
+    "name": "82 GRAYSTON DRIVE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1003853,
+      "lng": 28.053545,
+      "address": "82 GRAYSTON DRIVE SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Located on Grayston Drive, this recently renovated property boasts a prime position and beautifully finished interiors with a generous, light-filled layout ideal for creating a welcoming and professional environment. North-facing with breathtaking views over Bryanston and the Magaliesberg, it offers both visual appeal and functional design. Just a short walk from Benmore Gardens, the building is equipped with back-up power and water, fibre connectivity, and comprehensive access control and security, making it a well-rounded and desirable office location.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "3707"
+  },
+  {
+    "id": "P030",
+    "name": "9 FROSTERLEY CRESCENT",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -29.735249,
+      "lng": 31.0644614,
+      "address": "9 FROSTERLEY CRESCENT LA LUCIA RIDGE UMHLANGA",
+      "node": null,
+      "region": "KwaZulu-Natal"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "DURBAN",
+      "description": "This exceptional standalone commercial property is located in the prestigious La Lucia Ridge area of Umhlanga, within the meticulously maintained Frosterley Crescent office park. Offering ample open and basement parking, the secure, gated environment ensures peace of mind for tenants and visitors alike. The property is conveniently situated near public transport and a host of amenities, including Gateway Mall, Crawford School, and Gateway Hospital, making it an ideal choice for businesses seeking a well-connected and professional setting.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Craig Davis",
+      "phone": "+27 87 353 4742",
+      "email": "cdavis@growthpoint.co.za"
+    },
+    "property_code": "3578"
+  },
+  {
+    "id": "P031",
+    "name": "ADT HOUSE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -33.892181,
+      "lng": 18.56108,
+      "address": "LOUWTJIE ROTHMAN AVE GOODWOOD",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Cape Town",
+      "description": "ADT House is a modern A-grade, single-tenant building located in the vibrant N1 City precinct of Goodwood, Cape Town. Positioned on Louwtjie Rothman Avenue, the property offers excellent access to the N1 highway, ensuring quick connectivity to Cape Town CBD, Century City, and surrounding business hubs. Tenants benefit from proximity to N1 City Mall, a wide range of retail and dining options, and convenient public transport routes, making it an ideal location for businesses seeking accessibility, convenience, and a professional environment.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dirk Bronner",
+      "phone": "+27 87 353 4749",
+      "email": "dbronner@growthpoint.co.za"
+    },
+    "property_code": "2414"
+  },
+  {
+    "id": "P032",
+    "name": "ADVOCATES CHAMBERS",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.103219,
+      "lng": 28.052417,
+      "address": "CNR FREDMAN DRIVE & WEST STREET SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This well-maintained building has recently undergone refurbishment, including upgrades to the façade and lobby areas, and is centrally located with excellent access to public transport and major routes. Ideal for legal professionals, the property features a dedicated law library and ample boardrooms, along with easy wheelchair access, generous parking, and proximity to nearby shopping centres and hotels. Back-up power and water ensure uninterrupted operations in this conveniently positioned and professionally equipped office environment.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "3780"
+  },
+  {
+    "id": "P033",
+    "name": "AUTUMN ROAD",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.0436533,
+      "lng": 28.0587276,
+      "address": "12 AUTUMN STREET RIVONIA SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This well-located A-grade commercial building is a landmark in Rivonia, offering prime exposure onto Rivonia Road and excellent accessibility to public transport. Positioned at 12 Autumn Road, it provides quick and easy access to the M1, N1, and N3 highways, making it ideal for businesses seeking connectivity and convenience. The modern and secure offices may be subdivided into smaller pockets per floor, while nearby cafés, filling stations, and amenities are within walking distance. Additional features include 24-hour security, fibre connectivity, and reliable back-up water and generator power, ensuring uninterrupted operations in a sought-after location.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Heather Rush",
+      "phone": "+27 87 353 4702",
+      "email": "hrlang@growthpoint.co.za"
+    },
+    "property_code": "3540"
+  },
+  {
+    "id": "P034",
+    "name": "BELMONT OFFICE PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -33.960432,
+      "lng": 18.4739806,
+      "address": "BELMONT ROAD RONDEBOSCH",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Cape Town",
+      "description": "This modern and conveniently located office park spans over 15 000m² in the prestigious suburb of Rondebosch and comprises seven separate office buildings within a secure, wheelchair-accessible environment. With a 4 Star Green Star rating, the park offers sustainable, efficient office space close to major roads, schools, shopping centres, and public transport, including a nearby train station. Tenants benefit from 24-hour security, back-up power, fibre connectivity, and easy access to upmarket hotels and dining options, making it an ideal choice for businesses seeking a well-connected and reliable working environment.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dirk Bronner",
+      "phone": "+27 87 353 4749",
+      "email": "dbronner@growthpoint.co.za"
+    },
+    "property_code": "1809"
+  },
+  {
+    "id": "P035",
+    "name": "BOND TOWER",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -25.9955899,
+      "lng": 28.1346809,
+      "address": "CNR K101 AND GRAND CENTRAL BOULEVARD",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "MIDRAND",
+      "description": "This iconic multi-storey building is prominently positioned at the corner of the K101 and Grand Central Boulevard in Midrand, offering premium office space with excellent visibility and accessibility. With a convenient pedestrian entrance from Bond Street and located directly opposite the Midrand Gautrain station, it provides seamless transport access for commuters. The building also features ample secure basement parking, making it an ideal choice for businesses seeking a high-profile, well-connected address in the heart of Midrand.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Leah Smit",
+      "phone": "+27 87 353 4703",
+      "email": "lsmit@growthpoint.co.za"
+    },
+    "property_code": "2479"
+  },
+  {
+    "id": "P036",
+    "name": "BROOKFIELD OFFICE PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -25.771802,
+      "lng": 28.2313642,
+      "address": "261 MIDDEL STREET NIEUW MUCKLENEUK",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Pretoria",
+      "description": "Located in the prestigious Brooklyn area, Brookfield Office Park is a modern multi-storey office building that offers a professional and vibrant business environment with the added benefit of a convenient retail component. Ideally positioned for high visibility, the property provides excellent exposure in a sought-after business node and features 24-hour security and access control for complete peace of mind. An on-site restaurant offers a convenient space for meetings and business lunches, while its location on the Gautrain bus route ensures easy access to public transport. With a blend of security, accessibility, and mixed-use amenities, Brookfield Office Park is an ideal workspace in the heart of Brooklyn, Pretoria.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Leah Smit",
+      "phone": "+27 87 353 4703",
+      "email": "lsmit@growthpoint.co.za"
+    },
+    "property_code": "1904"
+  },
+  {
+    "id": "P037",
+    "name": "CELTIS BUSINESS PARK",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.1973108,
+      "lng": 27.9275867,
+      "address": "CNR HOEFYSTER & HARNAS STREET STORMILL FLORIDA EXTENSION 11, ROODEPOORT",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "This well-secured industrial park in Roodepoort offers multiple warehouse units to let, ideal for small manufacturers and distributors. Each unit includes a neat office component and warehouse space equipped with roller shutter doors, 3-phase power at 63 amps, and an eaves height of 7m. The park features 24/7 security, access control, and an on-site back-up generator for reliable power supply. With easy access to major highways and main roads, the location is well connected to public transport and is close to local restaurants and a nearby golf course. Additional benefits include fibre connectivity, ample parking, and excellent truck articulation space, ensuring a functional and efficient business environment.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Lee Greyvenstein",
+      "phone": "+27 87 353 4713",
+      "email": "lgreyvenstein@growthpoint.co.za"
+    },
+    "property_code": "2138"
+  },
+  {
+    "id": "P038",
+    "name": "CENTRAL PARK - CAPE TOWN",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -33.917747,
+      "lng": 18.5611022,
+      "address": "EPPING AVE ELSIESRIVER INDUSTRIA ESTATE GOODWOOD",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "Cape Town",
+      "description": "Located in the heart of Elsies River Industria Estate, Central Park is a secure, professionally managed industrial park designed to meet the needs of warehouse, distribution, and logistics operations. Positioned on Epping Avenue in Goodwood, this landscaped estate offers seamless access to major industrial hubs such as Beaconvale, as well as key transport routes across Cape Town. With units ranging from 600 m² to 5,000 m², the park caters to a wide range of operational requirements. Tenants benefit from a clean, well-maintained environment, robust security infrastructure, and an attractive setting that enhances the overall working experience. Central Park’s prime location and top-tier facilities make it an ideal choice for businesses seeking efficiency, accessibility, and peace of mind within Cape Town’s thriving industrial corridor.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Sedica Knight",
+      "phone": "+27 87 353 4751",
+      "email": "sknight@growthpoint.co.za"
+    },
+    "property_code": "3068"
+  },
+  {
+    "id": "P039",
+    "name": "CENTRAL PARK - MIDRAND",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -25.9810456,
+      "lng": 28.1315257,
+      "address": "400 16TH ROAD CORNER 16TH AND NEW ROAD MIDRAND",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "MIDRAND",
+      "description": "Central Park is a well-established low-rise office park featuring free-standing buildings in a prominent and central location within Midrand’s commercial hub. With easy access to the N1 highway via New Road, and close proximity to the Midrand Gautrain station, Mall of Africa, retail centres, banks, and restaurants, the park offers excellent connectivity and convenience. It features back-up water, fibre connectivity, 24-hour security, and an on-site coffee shop, and is situated on the Gautrain bus route, making it an ideal choice for businesses seeking accessibility and a well-supported working environment.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Leah Smit",
+      "phone": "+27 87 353 4703",
+      "email": "lsmit@growthpoint.co.za"
+    },
+    "property_code": "1811"
+  },
+  {
+    "id": "P040",
+    "name": "CONSTANTIA PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1514514,
+      "lng": 27.9244315,
+      "address": "CORNER 14TH AVENUE & HENDRIK POTGIETER ROAD, WELTEVREDEN PARK, ROODEPOORT",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This green and vibrant office park is nestled within beautifully landscaped gardens featuring flowing ponds, water features, and a thriving birdlife, creating a serene and inspiring work environment. Ideally located next to the N1 highway and the 14th Avenue offramp, it offers excellent highway access and convenient connections to public transport routes. On-site amenities include a Virgin Active gym, restaurants, a Shell garage, a medical centre, and various retail elements. The park also features 24/7 security, garden and building maintenance, fibre connectivity, emergency water back-up, and full-on load generators, making it a well-equipped and highly accessible business destination.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "1813"
+  },
+  {
+    "id": "P041",
+    "name": "COUNTRY CLUB ESTATE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.0593644,
+      "lng": 28.0828792,
+      "address": "21 WOODLANDS DRIVE WOODMEAD",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This A-grade commercial building, located adjacent to the Country Club golf course, offers modern and secure office space within a well-maintained, leafy office park. With large patios that showcase magnificent views, the park combines a tranquil setting with excellent connectivity to the M1, N1, and N3 highways. Tenants benefit from energy and water-efficient features, 24/7 security, fibre connectivity, and convenient access to public transport. Surrounded by leading local and international companies and close to hotels and retail offerings, the building presents an ideal environment for businesses seeking both functionality and prestige.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Heather Rush",
+      "phone": "+27 87 353 4702",
+      "email": "hrlang@growthpoint.co.za"
+    },
+    "property_code": "2509"
+  },
+  {
+    "id": "P042",
+    "name": "EDGECOMBE OFFICE PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -29.73504969999999,
+      "lng": 31.0659439,
+      "address": "LA LUCIA RIDGE OFFICE PARK PENCARROW CRESCENT LA LUCIA RIDGE",
+      "node": null,
+      "region": "KwaZulu-Natal"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "DURBAN",
+      "description": "Edgecombe Office Park is situated in the prestigious La Lucia Ridge Office Estate, offering a prime location with easy access to major transport routes and all key amenities in the area. The park features beautifully maintained landscaped gardens and boasts stunning ocean views, creating an inspiring and professional working environment. With 24-hour security, fibre connectivity, proximity to public transport, and a range of nearby restaurants and shops, Edgecombe Office Park provides both convenience and a scenic setting for businesses seeking a premium address.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Craig Davis",
+      "phone": "+27 87 353 4742",
+      "email": "cdavis@growthpoint.co.za"
+    },
+    "property_code": "1815"
+  },
+  {
+    "id": "P043",
+    "name": "ELVAN PROPERTY",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.1676947,
+      "lng": 28.166622,
+      "address": "A.G. DE WITT DRIVE  AND NORTH REEF RD FISHERS HILL, EDENVALE",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "Positioned at the intersection of A.G. De Witt Drive and North Reef Road, this well-located property in Fishers Hill, Edenvale provides excellent access to the N12 and R24 highways, ensuring seamless connectivity to key logistics routes across Gauteng. Its strategic location makes it ideal for businesses requiring efficient transport links and easy access to major commercial hubs.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Nicky Whiting",
+      "phone": "+27 87 353 4711",
+      "email": "nwhiting@growthpoint.co.za"
+    },
+    "property_code": "4306"
+  },
+  {
+    "id": "P044",
+    "name": "ETON OFFICE PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.0458798,
+      "lng": 28.010615,
+      "address": "CNR SLOANE STREET AND HARRISON AVENUE BRYANSTON, SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Eton Office Park provides a secure and tranquil working environment set within well-maintained gardens, offering a peaceful atmosphere without compromising on connectivity. Ideally located near a variety of retail options in Bryanston, the park enjoys convenient access to major highways including the N1, M1, and N3, with direct routes to Johannesburg, Pretoria, and OR Tambo Airport. Its location on the Gautrain bus route and close proximity to residential areas and schools further enhances accessibility, while back-up water supply ensures uninterrupted operations.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Heather Rush",
+      "phone": "+27 87 353 4702",
+      "email": "hrlang@growthpoint.co.za"
+    },
+    "property_code": "2126"
+  },
+  {
+    "id": "P045",
+    "name": "FERGUSON PLACE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1241179,
+      "lng": 28.0479024,
+      "address": "39 FERGUSON ROAD ILLOVO",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Situated in the highly sought-after Illovo node, this modern building offers prime corner exposure onto Oxford Road, combining a prestigious address with convenience and visibility. The property features beautifully landscaped gardens, classic common area finishes, and a newly refurbished lobby, making it an attractive option for discerning businesses. Located opposite St David’s School and within walking distance of the Thrupps Centre, it enjoys excellent access to the Sandton and Rosebank Gautrain stations, the M1 highway, and Sandton CBD. Additional features include 24/7 security, generator and water backup, a Green Star rating, proximity to upmarket hotels and shopping, and positioning on the Gautrain bus route.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "7017"
+  },
+  {
+    "id": "P046",
+    "name": "FREDMAN TOWERS",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1021625,
+      "lng": 28.0549813,
+      "address": "CNR FREDMAN DRIVE & BUTE LANE SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Located in the heart of Sandton, this iconic multi-level building offers a range of commercial opportunities suited to businesses of all sizes, with panoramic views of the city and convenient basement parking. Tenants benefit from modern amenities including back-up power, back-up water, and fibre connectivity, ensuring seamless operations. Positioned within walking distance of popular restaurants and featuring an on-site eatery in Fredman Towers, the building combines premium office space with excellent lifestyle convenience in Johannesburg’s premier business district.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2453"
+  },
+  {
+    "id": "P047",
+    "name": "FREESTONE PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1050599,
+      "lng": 28.0694631,
+      "address": "135 PATRICIA ROAD SANDOWN SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Set in the heart of Sandton’s business district, Freestone Park is a prominent office park located on Patricia Road with direct exposure to Katherine Street, offering excellent visibility and brand exposure in one of Johannesburg’s most sought-after commercial nodes. Comprising three modern office buildings, the park provides professional workspace with easy access to the M1 highway, Sandton Central, and the Gautrain bus route, ensuring convenient commuting for both staff and clients. Freestone Park is a strategic address for businesses seeking a well-connected and prestigious location in South Africa’s economic hub.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "2905"
+  },
+  {
+    "id": "P048",
+    "name": "GALAXY",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.0738905,
+      "lng": 28.1137449,
+      "address": "17 GALAXY AVENUE LINBRO PARK SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "Located in the heart of Linbro Park, Galaxy offers excellent highway exposure overlooking the busy N3, making it ideal for businesses seeking visibility and accessibility. The units feature large roller doors, paved yards for efficient truck loading, good eaves height, and three-phase power connections of 225 amps. Inside, the office component includes a neat reception area, multiple boardrooms, and a mix of open-plan and private offices, complemented by mezzanine levels, kitchenettes, and multiple staff restrooms. With landscaped gardens, 24-hour security, and easy access to major transport routes, Galaxy provides a well-rounded and professional industrial environment.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Vivienne Aspin",
+      "phone": "+27 87 353 4712",
+      "email": "vaspin@growthpoint.co.za"
+    },
+    "property_code": "2447"
+  },
+  {
+    "id": "P049",
+    "name": "GALLAGHER PLACE",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.0074367,
+      "lng": 28.1269418,
+      "address": "CNR SUTTIE AVENUE AND RICHARDS DRIVE, HALFWAY HOUSE MIDRAND",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "MIDRAND",
+      "description": "Gallagher Place is a well-maintained, multi-tenanted park comprising mini and midi units, offering secure and functional space for a range of businesses. Conveniently located near the N1 Highway, Gautrain, and various public transport routes, it ensures excellent accessibility for both staff and clients. The park features 24-hour security, 3-phase power to all units, fibre connectivity, and includes services such as gardening and external building maintenance. Its proximity to the Mall of Africa and a variety of upmarket restaurants enhances its appeal, making it an ideal choice for businesses seeking a professional, connected, and secure environment.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Vivienne Aspin",
+      "phone": "+27 87 353 4712",
+      "email": "vaspin@growthpoint.co.za"
+    },
+    "property_code": "1919"
+  },
+  {
+    "id": "P050",
+    "name": "GATEWAY",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.2607174,
+      "lng": 28.1196568,
+      "address": "CNR VOORTREKKER & RING ROAD EAST, ALBERTON SOUTH JOHANNESBURG",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "This predominantly motor-related property offers retail space, and enjoys excellent visibility onto Voortrekker Road.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Lee Greyvenstein",
+      "phone": "+27 87 353 4713",
+      "email": "lgreyvenstein@growthpoint.co.za"
+    },
+    "property_code": "3061"
+  },
+  {
+    "id": "P051",
+    "name": "GILLOOLYS VIEW",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1741765,
+      "lng": 28.1281358,
+      "address": "1 OSBORNE LANE BEDFORDVIEW",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This newly refurbished office park features multi-storey buildings set within a tranquil, park-like environment enhanced by water features and seating areas, creating a peaceful and professional workspace. Situated on the Gilloolys interchange, the park offers excellent N1 highway exposure and convenient access to major transport routes. With a Vida E café on site, proximity to OR Tambo International Airport, nearby restaurants, and various retail centres, it combines convenience with comfort. The property also offers full back-up power and 24/7 security, ensuring operational reliability and peace of mind.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "1819"
+  },
+  {
+    "id": "P052",
+    "name": "GIRTON PLACE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.183034,
+      "lng": 28.036413,
+      "address": "12A ST ANDREWS ROAD PARKTOWN",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Located on the corner of St David's Place and Girton Road, this centrally positioned building offers excellent convenience with easy access to the St Andrew's Road on-ramp to the M1 Highway and proximity to established public transport routes, including bus stops and the Gautrain bus route. The ground floor hosts a variety of amenities including restaurants, banks, an office supplier, and a printing shop, making it ideal for tenants seeking on-site services. The building is wheelchair accessible, water and energy efficient, and equipped with back-up water and power, while 24-hour security ensures a safe working environment. Its prime location near arterial roads and the M1 provides effortless connectivity across Johannesburg.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2931"
+  },
+  {
+    "id": "P053",
+    "name": "GRAYSTON OFFICE PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1016369,
+      "lng": 28.0702507,
+      "address": "128 PETER ROAD SANDOWN SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Grayston Office Park is a well-established, low-rise office park comprising free-standing buildings in a prominent and central location near the Sandton CBD. Surrounded by landscaped gardens and within walking distance of Grayston Shopping Centre, the park offers a convenient and professional environment for tenants. An on-site café provides easy dining options, while excellent signage opportunities onto Grayston Drive enhance visibility. The park features a high parking ratio for both tenants and visitors, easy access to the M1 highway, and is fully equipped with back-up power and water to ensure uninterrupted operations.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "2455"
+  },
+  {
+    "id": "P054",
+    "name": "GREYSTONES INDUSTRIAL",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -29.7503062,
+      "lng": 31.0285347,
+      "address": "135 OLD NORTH COAST ROAD GLEN ANIL",
+      "node": null,
+      "region": "KwaZulu-Natal"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "DURBAN",
+      "description": "Situated within the Greystone Industrial Park in Glen Anil, this multi-tenanted industrial park enjoys high visibility off the adjacent N2 highway and offers adequate on-grade parking.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Craig Davis",
+      "phone": "+27 87 353 4742",
+      "email": "cdavis@growthpoint.co.za"
+    },
+    "property_code": "3587"
+  },
+  {
+    "id": "P055",
+    "name": "GROSVENOR CORNER",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1441445,
+      "lng": 28.035611,
+      "address": "195 JAN SMUTS AVENUE PARKTOWN NORTH",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Situated in the bustling and highly sought-after Rosebank area, this flagship building enjoys a prime corner position at Jan Smuts Avenue and 7th Street, offering excellent visibility and prominent signage opportunities. With landscaped courtyards enhancing its appeal, the building is conveniently located near Rosebank Mall and The Zone, and within easy walking distance of the Rosebank Gautrain Station. Effortless access to the M1 via Glenhove ensures strong connectivity, while back-up power provides operational reliability in this prestigious and well-connected commercial address.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "1823"
+  },
+  {
+    "id": "P056",
+    "name": "GROWTHPOINT INDUSTRIAL ESTATE",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.1489776,
+      "lng": 28.1891597,
+      "address": "1 BELL STREET MEADOWDALE GERMISTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "Situated within the bustling industrial node of Edenvale, Growthpoint Industrial Estate offers high-tech units in a secure, well-maintained park with easy access to major highways and close proximity to O.R. Tambo International Airport. The estate comprises spacious office and warehouse space, making it ideal for businesses seeking a functional and strategically located industrial facility with excellent connectivity.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Nicky Whiting",
+      "phone": "+27 87 353 4711",
+      "email": "nwhiting@growthpoint.co.za"
+    },
+    "property_code": "2477"
+  },
+  {
+    "id": "P057",
+    "name": "GUNNERS",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -33.9288836,
+      "lng": 18.5331722,
+      "address": "GUNNERS CIRCLE EPPING INDUSTRIA 1",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "Cape Town",
+      "description": "Perfectly positioned on Gunners Circle in the heart of Epping Industria 1, this facility offers prime access just minutes from both the N1 and N2 highways, providing direct dual-carriageway connectivity to the greater Cape Town metropole and national logistics routes. Staff and visitors benefit from strong public transport links and access to nearby labour pools, while the area's established infrastructure and stringent security contribute to its reputation as one of the Western Cape’s most sought-after industrial nodes. Whether for manufacturing, warehousing, or expanding distribution capacity, Gunners delivers the space, accessibility, and strategic location your business needs.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Sedica Knight",
+      "phone": "+27 87 353 4751",
+      "email": "sknight@growthpoint.co.za"
+    },
+    "property_code": "3038"
+  },
+  {
+    "id": "P058",
+    "name": "HATFIELD GARDENS",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -25.7473088,
+      "lng": 28.2371181,
+      "address": "333 GROSVENOR STREET HATFIELD PRETORIA",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Pretoria",
+      "description": "Hatfields Gardens is an exceptional property set in the tranquil surroundings of Hatfield, Pretoria, offering a prime location directly opposite the Gautrain Station for unmatched convenience. With easy access to major highways, public transport, and a variety of nearby retail outlets and restaurants, it provides a well-connected and vibrant working environment. Its close proximity to the University of Pretoria further enhances its appeal, while access control ensures a secure and professional setting for tenants.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Leah Smit",
+      "phone": "+27 87 353 4703",
+      "email": "lsmit@growthpoint.co.za"
+    },
+    "property_code": "1824"
+  },
+  {
+    "id": "P059",
+    "name": "HOMESTEAD PLACE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.0487264,
+      "lng": 28.0586699,
+      "address": "CNR 12TH AVENUE AND RIVONIA RD RIVONIA SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This well-located building offers excellent exposure and a prime address on Rivonia Road, making it an ideal choice for tenants seeking visibility and accessibility. Positioned close to public transport options in Rivonia and with easy access to major arterial routes including the M1, N1, and N3, the property ensures seamless travel to Johannesburg, Pretoria, and OR Tambo International Airport. Featuring 24-hour security, Wi-Fi connectivity, and generator back-up, the building provides a secure, connected, and reliable working environment with convenient access to Gautrain and other major bus routes.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Heather Rush",
+      "phone": "+27 87 353 4702",
+      "email": "hrlang@growthpoint.co.za"
+    },
+    "property_code": "1924"
+  },
+  {
+    "id": "P060",
+    "name": "HUNTS END",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1128335,
+      "lng": 28.0564511,
+      "address": "38 & 42 WIERDA ROAD WEST WIERDA VALLEY",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Hunts End offers a serene and professional working environment set within beautifully landscaped surroundings, featuring four free-standing, high-quality office buildings with excellent finishes. Ideally located with convenient access to the Sandton Gautrain station and the M1 highway, the park provides a prime location for businesses seeking both tranquillity and connectivity. On-site amenities include a café/restaurant and a nine-hole golf course, while full back-up power ensures uninterrupted operations, making Hunts End a standout choice for discerning tenants.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2906"
+  },
+  {
+    "id": "P061",
+    "name": "ILLOVO BOULEVARD PIAZZAS",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1320077,
+      "lng": 28.0450558,
+      "address": "FRICKER ROAD ILLOVO BOULEVARD",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Situated on the prestigious Boulevard in Fricker Road, Illovo, this prime office space offers 558.36 m² of premium commercial real estate in one of Johannesburg’s most sought-after business districts. Nestled within the Illovo Boulevard precinct, part of the dynamic Illovo/Melrose/Wierda Valley node, the property enjoys proximity to Sandton and Rosebank, making it ideal for businesses seeking connectivity and prestige. The area is renowned for its leafy streets, upmarket amenities, and vibrant professional community. With excellent access to major transport routes and a host of nearby cafés, gyms, and retail outlets, this location combines convenience with sophistication - perfect for forward-thinking enterprises looking to establish themselves in Gauteng’s economic heart.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "3720"
+  },
+  {
+    "id": "P062",
+    "name": "ILLOVO CORNER",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1255369,
+      "lng": 28.0483152,
+      "address": "24 FRICKER ROAD ILLOVO",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This A-grade building is prominently positioned on the most sought-after corner of Illovo Boulevard, offering triple-storey office space surrounded by open gardens and picturesque views of the cobblestone streets. Located within a secure office park, it provides convenient access to key business hubs in the city, with quick connectivity to the M1 highway via Corlett Drive. Tenants benefit from full back-up power and water, and the property is within walking distance of Thrupps Centre, Illovo Square Shopping Centre, and the Wanderers Golf and Sports Club and cricket stadium, offering a well-rounded and prestigious business address.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2510"
+  },
+  {
+    "id": "P063",
+    "name": "IMPALA ROAD",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.0821139,
+      "lng": 28.0894954,
+      "address": "89 IMPALA ROAD KELVIN SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "This well-located, stand-alone industrial building is strategically positioned in the Marlboro Kelvin Ext Hub, offering a combination of warehouse and office space ideal for logistics and distribution. The property features sprinkler protection, a 3-phase power supply, ample yard area, and both dock and on-grade loading facilities to support efficient operations. With redevelopment planned, the site presents strong potential for future use. Conveniently located near public transport, with easy highway access, fibre connectivity, nearby parks, shopping centres, and on-site parking, it offers both functionality and accessibility in a key industrial node.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Vivienne Aspin",
+      "phone": "+27 87 353 4712",
+      "email": "vaspin@growthpoint.co.za"
+    },
+    "property_code": "2101"
+  },
+  {
+    "id": "P064",
+    "name": "INANDA GREENS - GPT",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1141056,
+      "lng": 28.0585755,
+      "address": "54 WIERDA ROAD WEST WIERDA VALLEY",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This exceptional office park offers a serene and scenic working environment, surrounded by a picturesque 9-hole mashy golf course with stunning views of the polo fields and Sandton’s iconic skyline. Designed to balance tranquillity with convenience, the park features an on-site café/restaurant and is fully equipped with back-up power and water to ensure uninterrupted operations. Its prime location provides easy access to the Gautrain and M1 highway, making it an ideal choice for businesses seeking both peace and connectivity in one of Johannesburg’s most desirable commercial settings.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2218"
+  },
+  {
+    "id": "P065",
+    "name": "INYANDA 2",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1831195,
+      "lng": 28.0373366,
+      "address": "15 GIRTON ROAD PARKTOWN",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Strategically located on the corner of St Davids Place and Girton Road, Inyanda 2 offers 11,340.18m² of prime office space in the heart of Parktown, just off the M1 North and South highway for fast, convenient access across Johannesburg. Ideal for corporate headquarters or professional services, the building provides a central and well-connected base with excellent visibility. Positioned along major public transport routes, including nearby Rea Vaya bus stops, it ensures easy accessibility for staff and visitors. This is a rare opportunity to secure office space in one of Joburg’s most established and sought-after business precincts.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2923"
+  },
+  {
+    "id": "P066",
+    "name": "KNIGHTSGATE",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.2174587,
+      "lng": 28.1562041,
+      "address": "CNR REFINERY ROAD, JACK STR JONAS CRESCENT DRIEHOEK, GERMISTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "Knightsgate is a well-located property positioned alongside the Geldenhuys Interchange, offering excellent access to the M2 and N3 highways and seamless connectivity to major arterial routes. This prime location supports a diverse range of mixed business uses, making it an ideal choice for companies seeking flexibility and accessibility. The property includes a small office component with a mezzanine level, and features 24-hour security, Wi-Fi connectivity, and proximity to public transport, providing a practical and well-connected space for growing businesses.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Lee Greyvenstein",
+      "phone": "+27 87 353 4713",
+      "email": "lgreyvenstein@growthpoint.co.za"
+    },
+    "property_code": "2409"
+  },
+  {
+    "id": "P067",
+    "name": "LAKESIDE 3",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -25.8526455,
+      "lng": 28.1889803,
+      "address": "263 A WEST AVENUE DIE HOEWES CENTURION",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Pretoria",
+      "description": "This 4-Star Green Star rated building is ideally located in the sought-after Centurion CBD, offering spectacular views over Centurion Lake and a modern, energy- and water-efficient design. Lakeside 3 features a well-maintained P-grade multi-storey structure with an inviting streetscape and landscaped gardens, creating a professional and welcoming environment. The building is easily accessible from the M1 highway and is within walking distance of the Centurion Gautrain station and Centurion Mall. Tenants benefit from full back-up power, fibre connectivity, 24-hour security, and proximity to a variety of restaurants and shops.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Leah Smit",
+      "phone": "+27 87 353 4703",
+      "email": "lsmit@growthpoint.co.za"
+    },
+    "property_code": "1852"
+  },
+  {
+    "id": "P068",
+    "name": "LONGKLOOF",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -33.929015,
+      "lng": 18.411679,
+      "address": "PARK/KLOOF/DARTERS ROADS GARDENS",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Cape Town",
+      "description": "Situated on Kloof Street on the edge of Cape Town’s city centre, Longkloof is a vibrant and well-connected precinct that blends heritage charm with modern workspace functionality. Conveniently located next to a MyCiTi bus stop, a Spar, and an upmarket retail node, it offers easy access to an array of popular cafés and eateries—ideal for business lunches or after-work socialising. Originally built in 1920 as a campus for United Tobacco Companies (UTC) Limited, the Longkloof Studios are now recognised heritage buildings, carefully preserved by the Western Cape. Today, the precinct is home to the award-winning 32 on Kloof and features newly renovated office spaces in Darter Studios, Thresher Studios, and The Refinery, offering quirky, creative workspaces within a thriving business community.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Chris Mackrill",
+      "phone": "+27 87 353 4748",
+      "email": "cmackrill@growthpoint.co.za"
+    },
+    "property_code": "3548"
+  },
+  {
+    "id": "P069",
+    "name": "MENLYN CORNER",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -25.7833897,
+      "lng": 28.278035,
+      "address": "87 FRIKKIE DE BEER STREET MENLYN",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Pretoria",
+      "description": "This mixed-use building offers a prime P-Grade office location in the vibrant hub of Menlyn, with outstanding visibility and a Gautrain bus stop positioned right in front of the property. Ideally located near major offramps such as Atterbury and Garsfontein, it provides seamless access to the N1 highway and key transport routes. With 24/7 security, a back-up generator, and fibre connectivity, the building ensures uninterrupted operations in a secure and connected environment. Tenants also benefit from nearby dining options in the adjacent building, on-site shopping, and the opportunity for prominent signage to maximise brand exposure. Boasting a 4 Green Star Rating, this address offers both prestige and sustainability in one of Pretoria’s most sought-after business districts.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Leah Smit",
+      "phone": "+27 87 353 4703",
+      "email": "lsmit@growthpoint.co.za"
+    },
+    "property_code": "2152"
+  },
+  {
+    "id": "P070",
+    "name": "MENLYN PIAZZA",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -25.7841767,
+      "lng": 28.2773961,
+      "address": "CNR GLEN MANOR AVENUE & LOIS AVENUE MENLYN",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Pretoria",
+      "description": "Menlyn Piazza is a modern mixed-use building located in the heart of Menlyn’s rapidly growing commercial hub, offering a range of well-ventilated, light-filled office spaces for lease. Designed to create a comfortable and productive working environment, the offices feature multiple small balconies perfect for coffee breaks, along with a convenient existing kitchen facility. Ideally positioned on the Gautrain bus route and directly opposite Menlyn Mall, the building provides excellent exposure, close proximity to retail and dining options, and easy access to the N1 highway, making it a prime address for businesses seeking visibility and convenience.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Leah Smit",
+      "phone": "+27 87 353 4703",
+      "email": "lsmit@growthpoint.co.za"
+    },
+    "property_code": "2432"
+  },
+  {
+    "id": "P071",
+    "name": "MONTEER",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.1454214,
+      "lng": 28.2027868,
+      "address": "2 MONTEER ROAD ISANDO",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "A stand alone unit with yard space, 400 amps 3 phase power available, situated in the Isando Hub.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Nicky Whiting",
+      "phone": "+27 87 353 4711",
+      "email": "nwhiting@growthpoint.co.za"
+    },
+    "property_code": "3137"
+  },
+  {
+    "id": "P072",
+    "name": "MORNINGSIDE CLOSE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.0736512,
+      "lng": 28.0656275,
+      "address": "222 RIVONIA ROAD MORNINGSIDE SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Morningside Close, a secure office park located in the popular suburb of Morningside, offers a convenient and ideal workspace for businesses. Situated opposite The Wedge shopping center, the office park provides easy access to a wide range of amenities, making it highly attractive for staff and directors alike. With signage onto Rivonia Road, it boasts excellent visibility and accessibility. Moreover, the office park's proximity to Gautrain Bus routes, shopping centers, and the Sandton CBD further enhances its desirability.Signage onto Rivonia RoadOn Gautrain Bus routesClose to Shopping CentresClose to Sandton CBD",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Heather Rush",
+      "phone": "+27 87 353 4702",
+      "email": "hrlang@growthpoint.co.za"
+    },
+    "property_code": "3528"
+  },
+  {
+    "id": "P073",
+    "name": "OGILVY BUILDING",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.041326,
+      "lng": 28.0160412,
+      "address": "15 SLOANE STREET BRYANSTON SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This strategically located property, is situated in Bryanston, on the corner of William Nicol and Sloane street. It enjoys easy access to the N1 Western Bypass.  There is ample parking available and beautifully landscaped gardens. The upgrade will prioritize the precinct's visual appeal while upgrading the overall look and feel of the entire park. The park consists of 4 blocks nestled between green gardens and leafy trees.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Heather Rush",
+      "phone": "+27 87 353 4702",
+      "email": "hrlang@growthpoint.co.za"
+    },
+    "property_code": "2468"
+  },
+  {
+    "id": "P074",
+    "name": "OXFORD CORNER",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.142893,
+      "lng": 28.0432745,
+      "address": "32A JELLICOE AVENUE ROSEBANK",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This landmark eight-level building on Oxford Road, directly opposite the Hyatt Hotel, offers breathtaking 360-degree views of Johannesburg and an ideal setting for both local and international companies. Fully air-conditioned with covered and open parking, the building features an energy-efficient design and a Green Star rating, ensuring sustainability and cost-effectiveness. Its prime location provides easy access to the Rosebank Gautrain Station, upmarket hotels, Rosebank Mall, and The Zone, placing tenants at the centre of one of the city’s most dynamic commercial precincts. With water efficiency measures, backup water supply, and a full on-load generator, the property delivers a highly convenient and reliable working environment with excellent accessibility.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2907"
+  },
+  {
+    "id": "P075",
+    "name": "PETER PLACE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.0809212,
+      "lng": 28.0150646,
+      "address": "24 PETER PLACE LYME PARK BRYANSTON, SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Nestled directly behind the prestigious St Stithians College, this A-grade building enjoys a prime location with seamless connectivity to Bryanston, Sandton, and Randburg. Its close proximity to the Coachman's Crossing Shopping Centre enhances everyday convenience, while quick access to the Sandton CBD and nearby Gautrain Bus routes ensures efficient commuting. The property also offers prominent signage opportunities onto Peter Place, along with full back-up power and water, making it a reliable and well-positioned workspace for discerning businesses.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Heather Rush",
+      "phone": "+27 87 353 4702",
+      "email": "hrlang@growthpoint.co.za"
+    },
+    "property_code": "1933"
+  },
+  {
+    "id": "P076",
+    "name": "PETER PLACE OFFICE PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.0824946,
+      "lng": 28.0208222,
+      "address": "54 PETER PLACE BRYANSTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Peter Place Office Park offers a prime business location with excellent access to the amenities of both Sandton and Bryanston. Situated next to St Stithians College and directly opposite Coachman's Crossing Shopping Centre, the park provides a vibrant and dynamic working environment. The building offers sub-divisible spaces to suit a range of business needs, complemented by features such as 24/7 security, fibre connectivity, public transport access, and back-up generators in select buildings. Additional benefits include emergency water backup, landscaped surroundings, ample parking, and proximity to upmarket dining and shopping options, as well as convenient access to the N1 highway.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Heather Rush",
+      "phone": "+27 87 353 4702",
+      "email": "hrlang@growthpoint.co.za"
+    },
+    "property_code": "2515"
+  },
+  {
+    "id": "P077",
+    "name": "PHAROS HOUSE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -29.8356567,
+      "lng": 30.9171913,
+      "address": "70 BUCKINGHAM TERRACE WESTVILLE DURBAN",
+      "node": null,
+      "region": "KwaZulu-Natal"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "DURBAN",
+      "description": "Situated in the vibrant heart of the Westville CBD, Pharos House offers a well-connected and convenient office location close to key amenities and major transport routes. Positioned adjacent to the popular Westville Mall and just moments from Westville Junction, the building provides easy access to restaurants, shops, and public transport. It features 24-hour security, fibre connectivity, and easy highway access, ensuring both connectivity and peace of mind. With wheelchair access, an elevator, and a neatly tiled foyer with front desk security, Pharos House presents a professional and accessible working environment.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Craig Davis",
+      "phone": "+27 87 353 4742",
+      "email": "cdavis@growthpoint.co.za"
+    },
+    "property_code": "3701"
+  },
+  {
+    "id": "P078",
+    "name": "PINEWOOD OFFICE PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.0415594,
+      "lng": 28.0751817,
+      "address": "33 RILEY ROAD WOODMEAD SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This A-grade secure office park offers a serene working environment with picturesque views over a lush green golf course, while being conveniently located near a wide range of shops and retailers in Woodmead. With easy access to the N1 Highway and main roads connecting Johannesburg, Pretoria, and OR Tambo Airport, the park ensures excellent regional connectivity. Positioned along established bus routes, it supports convenient commuting, and features a café on-site for added day-to-day convenience. The park also offers a stand-alone building opportunity in Block 3 and is equipped with full back-up power, making it an ideal location for businesses seeking a well-connected and self-sufficient workspace.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Heather Rush",
+      "phone": "+27 87 353 4702",
+      "email": "hrlang@growthpoint.co.za"
+    },
+    "property_code": "3526"
+  },
+  {
+    "id": "P079",
+    "name": "RIVER PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -33.9469323,
+      "lng": 18.4769113,
+      "address": "LIESBEECK PARKWAY SETTLERS WAY MOWBRAY",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Cape Town",
+      "description": "River Park is a prestigious commercial office complex located just off the N2 Highway on Liesbeek Parkway, in the leafy suburb of Mowbray. Comprising five distinct buildings, the park offers secure, sophisticated office spaces with captivating views of Table Mountain, Constantiaberg, and nearby sports fields, creating a scenic and inspiring work environment. With a 3 Star Green Star rating, a back-up water system, and a high parking ratio, River Park combines sustainability with functionality. Its prime location ensures easy access to major routes linking the Southern and Northern suburbs, and it is conveniently close to public transport, making it an ideal base for forward-thinking businesses.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dirk Bronner",
+      "phone": "+27 87 353 4749",
+      "email": "dbronner@growthpoint.co.za"
+    },
+    "property_code": "2452"
+  },
+  {
+    "id": "P080",
+    "name": "ROGGEBAAI PLACE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -33.9171577,
+      "lng": 18.4263931,
+      "address": "4 JETTY STREET FORESHORE",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Cape Town",
+      "description": "Roggebaai Place is a premier A-Grade 4 Star Green Star rated building situated on the vibrant Foreshore. Just a stone's throw away from the iconic V&A Waterfront, the CTICC Convention Centre, and an array of amenities and public transportation options, this remarkable building offers an unrivaled location. With its ground-floor retail spaces, two basement parking levels, seven podium levels of secure parking, and seven floors of prestigious commercial offices, the building boasts expansive floor plates and breathtaking views, ensuring a captivating work environment. Moreover, the ample parking facilities cater to both staff and visitors, while the easy access to major thoroughfares streamlines commutes.Large floor plates Stunning views Ample parking for staff and visitorsEasy access to major thoroughfares",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Chris Mackrill",
+      "phone": "+27 87 353 4748",
+      "email": "cmackrill@growthpoint.co.za"
+    },
+    "property_code": "3788"
+  },
+  {
+    "id": "P081",
+    "name": "ROSEBANK OFFICE PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.14715,
+      "lng": 28.03522,
+      "address": "181 JAN SMUTS AVENUE PARKTOWN NORTH",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Rosebank Office Park is a distinctive property featuring charming Cape Dutch architecture across five double-storey standalone buildings, set within tranquil gardens that create a peaceful and professional environment for businesses and employees. Located at the intersection of Jan Smuts Avenue and Walters Street, the park is within walking distance of the Rosebank Gautrain Station and serviced by the Gautrain Bus System, ensuring excellent public transport access. With ample open, covered, and basement parking, nearby restaurants and shops, back-up power, and 24/7 security, Rosebank Office Park offers a secure and convenient workspace in one of Johannesburg’s most sought-after commercial nodes.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2406"
+  },
+  {
+    "id": "P082",
+    "name": "ROUTE 41",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.1891046,
+      "lng": 27.9152037,
+      "address": "1021 ANVIL ROAD ROBERTVILLE ROODEPOORT",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "Route 41 Industrial Park is ideally positioned parallel to Main Reef Road, offering excellent access to the M2, M1, N1, N12, and R24 highways, making it a strategic location for logistics and light industrial operations. The park features a variety of unit sizes, each with good eaves height for stacking, on-grade roller shutter doors, a well-balanced office-to-warehouse ratio, and shaded parking. With 24-hour surveillance and access control, it ensures a secure working environment, while nearby public transport options and the Croesus train station enhance accessibility for staff. Additional benefits include excellent signage opportunities, great ablution facilities, and a 3-phase 110 amps power supply, making this a versatile and convenient industrial address.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Lee Greyvenstein",
+      "phone": "+27 87 353 4713",
+      "email": "lgreyvenstein@growthpoint.co.za"
+    },
+    "property_code": "1843"
+  },
+  {
+    "id": "P083",
+    "name": "SANDOWN MEWS",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1057404,
+      "lng": 28.0599113,
+      "address": "88 STELLA STREET SANDOWN",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Sandown Mews is an A-grade office park located in the heart of Sandton, offering a prestigious business address with recently refurbished space in the West Block and ongoing upgrades to the common areas in the East Block. Ideal for tenants engaging with international clients, the park features a rooftop entertainment area overlooking Mushroom Park and provides pedestrian access to The Marc shopping complex across the road, home to Pick n Pay, Planet Fitness, Food Lovers, and a variety of restaurants, coffee shops, and retail stores. With 24-hour security, full back-up power and water, ample open and basement parking, and easy access to Rivonia Road, Sandown Mews combines convenience, connectivity, and premium office space in Johannesburg’s premier commercial hub.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2910"
+  },
+  {
+    "id": "P084",
+    "name": "SANDTON CLOSE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.104758,
+      "lng": 28.047933,
+      "address": "CNR 5TH STREET & NORWICH CLOSE SANDOWN, SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Sandton Close is a well-positioned and secure office building offering a range of air-conditioned office suites with recently renovated interiors, providing excellent value in a prime Sandton location. The building features ample basement and visitor parking, easy access to major highways, and is within walking distance of Benmore Gardens. Tenants benefit from back-up power and water, fibre connectivity, and the convenience of having a Sandwich Baron on site, making it an ideal choice for businesses seeking affordability without compromising on location or amenities.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "2114"
+  },
+  {
+    "id": "P085",
+    "name": "SOVEREIGN QUAY",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -33.9132452,
+      "lng": 18.4170766,
+      "address": "CNR LIDDLE & SOMERSET ROADS GREEN POINT",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Cape Town",
+      "description": "Sovereign Quay is a modern low-rise multi-use building located on the vibrant Somerset Road in Cape Town’s CBD, attracting prestigious blue-chip companies with its upscale commercial and ground-floor retail offerings. Ideally positioned within walking distance of Cape Quarter, the V\\&A Waterfront, and Cape Town Stadium, the building offers superb convenience and lifestyle appeal. With close proximity to both the N1 and N2 highway on-ramps, it ensures excellent accessibility. Tenants benefit from generator back-up power to all common areas, fibre connectivity, 24/7 CCTV surveillance, biometric access control, and a prime location in a trendy area surrounded by a variety of retail outlets.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Chris Mackrill",
+      "phone": "+27 87 353 4748",
+      "email": "cmackrill@growthpoint.co.za"
+    },
+    "property_code": "3549"
+  },
+  {
+    "id": "P086",
+    "name": "STRATHAVON 11",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1029,
+      "lng": 28.07299,
+      "address": "152 KATHERINE STREET SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Neighbouring the popular Pinmill Office Park, Strathavon Office Park is nestled in a tranquil, park-like setting with lush green gardens overlooking Innesfree Park. Ideally located with easy access to major transport routes, including the M1 on/off ramps via Grayston Drive, the park also sits on both the Gautrain and Rea Vaya bus routes, ensuring excellent connectivity. With 24-hour security, wheelchair-friendly access, and close proximity to Sandton CBD, restaurants, and shops, Strathavon Office Park offers a peaceful yet conveniently located working environment away from heavy traffic.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "2913"
+  },
+  {
+    "id": "P087",
+    "name": "SUNNYSIDE OFFICE PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1785665,
+      "lng": 28.0468652,
+      "address": "32 PRINCESS OF WALES TERRACE PARKTOWN",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This recently refurbished multi-storey building enjoys a prestigious location next to the historic Sunnyside Park Hotel, surrounded by landscaped gardens that create a serene and professional atmosphere. Ideally positioned just 3km from Killarney Mall, it offers convenient access to a wide range of shops, restaurants, and entertainment options. With its proximity to top schools, hospitals, the city centre, and the M1 highway and major roads, commuting is effortless. Additional amenities include Café Rossini on-site and back-up power, making it a highly appealing choice for businesses seeking both charm and convenience.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Hannah Nesbitt",
+      "phone": "+27 87 353 4701",
+      "email": "hnesbitt@growthpoint.co.za"
+    },
+    "property_code": "1846"
+  },
+  {
+    "id": "P088",
+    "name": "THE ANNEX",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.108437,
+      "lng": 28.0490978,
+      "address": "15 ALICE LANE SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "This premium-grade building is located on prestigious Alice Lane and features state-of-the-art modern finishes within a lush, park-like environment. Ideally positioned within walking distance of Sandton City Mall, Virgin Active, The Grillhouse, Nikos, Canteen, and more, it offers unparalleled convenience and lifestyle appeal. With breathtaking views stretching across Sandhurst to Northcliff, the building provides an impressive setting perfectly suited for a corporate head office. Tenants benefit from full back-up power and water, advanced access control and security, fibre connectivity, and close proximity to Benmore Gardens and the Sandton Gautrain station.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "7027"
+  },
+  {
+    "id": "P089",
+    "name": "THE DISTRICT",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -33.9284462,
+      "lng": 18.4240784,
+      "address": "41 SIR LOWRY ROAD WOODSTOCK CAPE TOWN",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Cape Town",
+      "description": "The District features strategically arranged offices, showrooms, and restaurant spaces centred around a vibrant courtyard, offering over 18,000m² of modern, high-quality office space with a 4 Star Green Star rating. This exceptional property boasts a convenient location with easy highway and public transport access, ample parking, and a dynamic, inspiring working environment. Tenants benefit from back-up power to offices, fibre connectivity, 24/7 security including CCTV cameras and biometric access control, a full off-the-grid water supply, and an excellent parking ratio, combining sustainability, security, and convenience in one premium business hub.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Chris Mackrill",
+      "phone": "+27 87 353 4748",
+      "email": "cmackrill@growthpoint.co.za"
+    },
+    "property_code": "1894"
+  },
+  {
+    "id": "P090",
+    "name": "THE ESTUARIES",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -33.8844786,
+      "lng": 18.5215489,
+      "address": "OXBOW LANE (OFF CENTURY AVE) CENTURY CITY",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Cape Town",
+      "description": "Nestled in the lively heart of Century City, The Estuaries is a meticulously maintained office park featuring six premium low-rise buildings. Ideally positioned along a key MyCiTi bus route, this secure, access-controlled environment is perfectly suited to both corporate headquarters and smaller enterprises. With round-the-clock security, comprehensive CCTV coverage, and a high-speed fibre connection via Century Connect, peace of mind comes standard. Tenants enjoy beautifully landscaped outdoor areas, private balconies in each building, and the added benefit of one of the area's finest coffee shops right on site.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dirk Bronner",
+      "phone": "+27 87 353 4749",
+      "email": "dbronner@growthpoint.co.za"
+    },
+    "property_code": "2475"
+  },
+  {
+    "id": "P091",
+    "name": "THE GROVE BUSINESS ESTATE",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -34.0786181,
+      "lng": 18.8153985,
+      "address": "OLD PAARDEVLEI ROAD SOMERSET WEST",
+      "node": null,
+      "region": "Western Cape"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "Cape Town",
+      "description": "The Grove Business Estate is a substantial industrial complex located within a sectional title development in Somerset West, part of the thriving Somerset West/Stellenbosch/Strand node in the Western Cape. Offering a total GLA of 17,659 m², the estate features units ranging from 300 m² to 3,000 m², catering to a wide variety of operational needs. Positioned on Old Paardevlei Road, the estate enjoys excellent visibility and is just moments from the N2 highway and Somerset Mall Shopping Centre, ensuring both convenience and exposure. With 24-hour security, landscaped surroundings, and a professional atmosphere, The Grove provides a secure and attractive base for industrial businesses seeking a strategic location within Cape Town’s expanding commercial corridor.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Sedica Knight",
+      "phone": "+27 87 353 4751",
+      "email": "sknight@growthpoint.co.za"
+    },
+    "property_code": "2137"
+  },
+  {
+    "id": "P092",
+    "name": "THE VILLAGE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -25.7797675,
+      "lng": 28.2903115,
+      "address": "CNR OBERON AND GLENWOOD ROADS FAERIE GLEN",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "Pretoria",
+      "description": "The Village Office Park is a hidden gem nestled in the scenic Faerie Glen suburb, offering a recently renovated commercial space across six standalone buildings that combine modernity and sophistication. With 24/7 security, tenants enjoy peace of mind, while ample open and basement parking, along with off-street parking on a first-come, first-served basis, caters to all parking needs. Conveniently located near main arterial routes like Lynnwood Road and within easy highway access, the park is close to shopping at Menlyn Mall and Menlyn Maine, the Gautrain Station, and upmarket hotels in the Menlyn Maine precinct, making it an ideal choice for businesses seeking a secure and well-connected environment.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Leah Smit",
+      "phone": "+27 87 353 4703",
+      "email": "lsmit@growthpoint.co.za"
+    },
+    "property_code": "3729"
+  },
+  {
+    "id": "P093",
+    "name": "THYNK INDUSTRIAL PARK",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -29.7947626,
+      "lng": 31.0156567,
+      "address": "CNR QUEEN NANDI DRIVE & 1 BRICKWORKS WAY BRIARDENE, DURBAN NORTH",
+      "node": null,
+      "region": "KwaZulu-Natal"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "DURBAN",
+      "description": "Thynk Park is located in the heart of the Briardene industrial node within a new multi-tenanted development featuring mini units ranging from 216 to 540m². The secure park offers easy access and is conveniently close to the N2 highway, making it an ideal location for businesses seeking a well-connected and secure industrial space.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Craig Davis",
+      "phone": "+27 87 353 4742",
+      "email": "cdavis@growthpoint.co.za"
+    },
+    "property_code": "2135"
+  },
+  {
+    "id": "P094",
+    "name": "TRIPARK",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.0808257,
+      "lng": 28.0879053,
+      "address": "17 EASTERN SERVICE ROAD EASTGATE SANDTON",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "A secure multi-tenanted park with highway frontage that offers warehouse and connecting office facilities. It is close to Sandton and is centrally located bewteen the M1 and N3 highways. It is also sprinkler protected with fire tanks, and offers 3-phase power.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Vivienne Aspin",
+      "phone": "+27 87 353 4712",
+      "email": "vaspin@growthpoint.co.za"
+    },
+    "property_code": "2104"
+  },
+  {
+    "id": "P095",
+    "name": "WADESTONE INDUSTRIAL PARK",
+    "type": "Industrial",
+    "status": "Active",
+    "location": {
+      "lat": -26.2728426,
+      "lng": 28.1890891,
+      "address": "SNAPPER AVENUE WADEVILLE",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Industrial",
+      "city": "JOHANNESBURG",
+      "description": "Secure your future footprint on Lamp Road, Wadeville – Germiston’s powerhouse industrial hub. Three serviced, fully zoned stands – 5 472 m², 5 678 m² and 15 422 m² – are ready for tenant-driven development, allowing you to commission a purpose-built facility that mirrors your exact operational needs, from warehouse height and floor loading to bespoke office space. Situated minutes from the N3, N17 and R59 corridors, the site delivers rapid links to Johannesburg, Ekurhuleni’s logistics belt and OR Tambo International Airport, while nearby labour pools and public transport keep staffing seamless. Combine parcels or develop individually – whichever route you choose, this is a rare chance to create a made-to-measure industrial base in one of Gauteng’s most sought-after zones.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Lee Greyvenstein",
+      "phone": "+27 87 353 4713",
+      "email": "lgreyvenstein@growthpoint.co.za"
+    },
+    "property_code": "2160"
+  },
+  {
+    "id": "P096",
+    "name": "WATERFALL PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.0121947,
+      "lng": 28.1145769,
+      "address": "HOWICK CLOSE VORNA VALLEY",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "MIDRAND",
+      "description": "Waterfall Office Park serves both corporate and small businesses within a perfectly balanced ecosystem of companies and professionals. The tenant mix includes international firms, multi-region companies, and a wide array of professional service and IT-related businesses, covering nearly every sector of the national economy—all within a single business park. Planned façade upgrades will enhance this freestanding property, which benefits from excellent visibility from the highway, making it a prominent and well-positioned workplace destination.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Leah Smit",
+      "phone": "+27 87 353 4703",
+      "email": "lsmit@growthpoint.co.za"
+    },
+    "property_code": "2473"
+  },
+  {
+    "id": "P097",
+    "name": "WIERDA COURT",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.1105055,
+      "lng": 28.0577385,
+      "address": "107 JOHAN AVENUE WIERDA VALLEY",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Wierda Court is a charming Tuscan-inspired property featuring two free-standing double-storey office buildings set within beautifully landscaped gardens. Ideally located near Sandton City, Sandton Convention Centre, and the Sandton Gautrain station, it offers easy access to major routes and public transport. Tenants benefit from proximity to shopping centres and hotels, as well as back-up water and a generator, ensuring a reliable and convenient working environment in one of Johannesburg’s premier business districts.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Dylan Newton",
+      "phone": "+27 87 353 4704",
+      "email": "dnewton@growthpoint.co.za"
+    },
+    "property_code": "2915"
+  },
+  {
+    "id": "P098",
+    "name": "WOODLANDS OFFICE PARK",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.0614707,
+      "lng": 28.0863218,
+      "address": "20 WOODLANDS DRIVE WOODMEAD",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Set within a sprawling 43-hectare game park, The Woodlands Office Park provides a tranquil setting where employees can enjoy breaks surrounded by wildlife, prolific birdlife, serene waterscapes, and lush greenery. The Woodlands Lifestyle Centre offers a range of everyday conveniences, while the game park includes an entertainment boma ideal for corporate events and functions. Easily accessible from Pretoria, Johannesburg CBD, O.R. Tambo International Airport, Sandton, and Midrand, the park benefits from numerous retail options in Woodmead and shuttle services to and from the Gautrain Marlboro Station. Additional amenities include back-up power and water, an on-site Mugg & Bean, and dedicated event venues, making it a unique and well-equipped business location.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Leah Smit",
+      "phone": "+27 87 353 4703",
+      "email": "lsmit@growthpoint.co.za"
+    },
+    "property_code": "3790"
+  },
+  {
+    "id": "P099",
+    "name": "WOODMEAD ESTATE",
+    "type": "Office",
+    "status": "Active",
+    "location": {
+      "lat": -26.0532549,
+      "lng": 28.0887471,
+      "address": "1 WOODMEAD DRIVE WOODMEAD",
+      "node": null,
+      "region": "Gauteng"
+    },
+    "property_details": {
+      "sector": "Office",
+      "city": "JOHANNESBURG",
+      "description": "Nestled within beautifully landscaped gardens, this immaculate A-grade office park offers a peaceful and serene atmosphere opposite the bustling Woodmead retail hub, providing convenient access to a variety of shops. The park boasts excellent connectivity with easy access to major arterial routes including the M1, N1, and N3, facilitating travel to Johannesburg, Pretoria, and OR Tambo Airport. Tenants benefit from 24/7 security, fibre connectivity, emergency water backup, and hassle-free highway access. With well-maintained gardens, exterior building upkeep, ample parking, nearby public transport, and a presence of major local and international companies, this location combines convenience, security, and prestige.",
+      "parking_ratio": null
+    },
+    "leasing_consultant": {
+      "name": "Heather Rush",
+      "phone": "+27 87 353 4702",
+      "email": "hrlang@growthpoint.co.za"
+    },
+    "property_code": "2516"
+  }
+]

@@ -7,8 +7,8 @@ import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { Checkbox } from './ui/checkbox';
 import { Search, ArrowUpDown, ArrowUp, ArrowDown, Building2 } from 'lucide-react';
-import { properties } from '../lib/mockData';
-import type { Property, PropertyStatus, PropertyType } from '../lib/mockData';
+import { properties } from '../lib/data';
+import type { Property, PropertyStatus, PropertyType } from '../lib/data';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 
 type SortField = 'name' | 'type' | 'value' | 'occupancy' | 'roi' | 'revenue' | 'region';

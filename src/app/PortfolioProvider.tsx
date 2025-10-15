@@ -2,8 +2,8 @@
 
 import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react';
 import { toast } from 'sonner';
-import type { Property, Notification } from '@/lib/mockData';
-import { properties } from '@/lib/mockData';
+import type { Property, Notification } from '@/lib/data';
+import { properties } from '@/lib/data';
 
 type ViewType = 'dashboard' | 'map' | 'financial' | 'properties' | 'tenants';
 type UserRole = 'executive' | 'asset-manager' | 'employee';

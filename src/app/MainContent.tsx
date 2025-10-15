@@ -5,7 +5,7 @@ import { DashboardOverview } from '@/components/DashboardOverview';
 import { FinancialMetrics } from '@/components/FinancialMetrics';
 import { PropertyTable } from '@/components/PropertyTable';
 import { TenantTable } from '@/components/TenantTable';
-import { properties, tenants } from '@/lib/mockData';
+import { properties, tenants } from '@/lib/data';
 import { usePortfolio } from './PortfolioProvider';
 import { cn } from '@/lib/utils';
 

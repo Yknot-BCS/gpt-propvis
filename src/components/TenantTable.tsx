@@ -20,7 +20,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from './ui/select';
-import type { Tenant } from '../lib/mockData';
+import type { Tenant } from '../lib/data';
 
 interface TenantTableProps {
   tenants: Tenant[];

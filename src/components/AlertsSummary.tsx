@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
-import type { Notification } from '../lib/mockData';
+import type { Notification } from '../lib/data';
 import { AlertCircle, AlertTriangle, Bell, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 

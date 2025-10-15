@@ -9,7 +9,7 @@ import {
   CommandItem,
   CommandList,
 } from '@/components/ui/command';
-import { properties, tenants } from '@/lib/mockData';
+import { properties, tenants } from '@/lib/data';
 import { usePortfolio } from './PortfolioProvider';
 
 export function GlobalSearch() {

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { X, ArrowLeftRight } from 'lucide-react';
-import type { Property } from '../lib/mockData';
+import type { Property } from '../lib/data';
 
 interface ComparisonToolbarProps {
   selectedProperties: Property[];

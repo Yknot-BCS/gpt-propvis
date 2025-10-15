@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import type { Notification } from '../lib/mockData';
+import type { Notification } from '../lib/data';
 import { Button } from './ui/button';
 import { ScrollArea } from './ui/scroll-area';
 import { Badge } from './ui/badge';

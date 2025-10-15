@@ -1,8 +1,8 @@
 'use client';
 import { useEffect, useRef } from 'react';
 import 'leaflet/dist/leaflet.css';
-import { properties } from '../lib/mockData';
-import type { Property } from '../lib/mockData';
+import { properties } from '../lib/data';
+import type { Property } from '../lib/data';
 import L from 'leaflet';
 
 

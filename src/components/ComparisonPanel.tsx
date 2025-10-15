@@ -12,7 +12,7 @@ import {
   Users,
   DollarSign
 } from 'lucide-react';
-import type { Property } from '../lib/mockData';
+import type { Property } from '../lib/data';
 import { cn } from '@/lib/utils';
 
 interface ComparisonPanelProps {

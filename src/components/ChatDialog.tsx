@@ -16,7 +16,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import type { Property } from '../lib/mockData';
+import type { Property } from '../lib/data';
 import { motion, AnimatePresence } from 'framer-motion';
 
 type UserRole = 'executive' | 'asset-manager' | 'employee' | 'finance';

@@ -2,8 +2,8 @@
 import dynamic from 'next/dynamic';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { TrendingUp, Building2, DollarSign, Percent, ArrowRight, MapPin } from 'lucide-react';
-import { properties, calculatePortfolioMetrics, monthlyPerformance, portfolioByType, regionalDistribution } from '../lib/mockData';
-import type { Property, Notification } from '../lib/mockData';
+import { properties, calculatePortfolioMetrics, calculatePortfolioByType, calculateRegionalDistribution, monthlyPerformance } from '../lib/data';
+import type { Property, Notification } from '../lib/data';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from 'recharts';
 import { Badge } from './ui/badge';
 import { AlertsSummary } from './AlertsSummary';
@@ -28,6 +28,8 @@ export function DashboardOverview({
   onNotificationClick,
 }: DashboardOverviewProps) {
   const portfolioMetrics = calculatePortfolioMetrics(properties);
+  const portfolioByType = calculatePortfolioByType(properties);
+  const regionalDistribution = calculateRegionalDistribution(properties);
 
   // Find specific properties for the insight cards
   const topPerformer = properties.find(p => p.name === 'Gateway Theatre of Shopping');

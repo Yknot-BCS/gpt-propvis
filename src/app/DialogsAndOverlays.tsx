@@ -9,7 +9,7 @@ import { NotificationDialog } from '@/components/NotificationDialog';
 import { NotificationSettings } from '@/components/NotificationSettings';
 import { PropertySidebar } from '@/components/PropertySidebar';
 import { Toaster } from '@/components/ui/sonner';
-import { properties } from '@/lib/mockData';
+import { properties } from '@/lib/data';
 import { usePortfolio } from './PortfolioProvider';
 
 type ViewType = 'dashboard' | 'map' | 'financial' | 'properties' | 'tenants';

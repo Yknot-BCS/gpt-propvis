@@ -4,7 +4,7 @@ import { MapPin, X, Eye, Edit } from 'lucide-react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import { Properties } from '@/lib/mockData';
+import { Properties } from '@/lib/data';
 
 // Types and Interfaces
 export interface PropertyLocation {

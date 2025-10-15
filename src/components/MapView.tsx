@@ -2,8 +2,8 @@
 import { useState, useEffect, useRef } from 'react';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import { properties } from '../lib/mockData';
-import type { Property } from '../lib/mockData';
+import { properties } from '../lib/data';
+import type { Property } from '../lib/data';
 
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
