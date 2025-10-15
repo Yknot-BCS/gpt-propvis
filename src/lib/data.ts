@@ -3231,7 +3231,7 @@ export const properties: Property[] = [
       lng: 27.9351608,
       address: "BONZA BAY ROAD BEACON BAY",
       node: "n/a",
-      region: "Port Elizabeth"
+      region: "Eastern Cape"
     },
     metrics: {
       value: 42115988,
@@ -3386,7 +3386,7 @@ export const properties: Property[] = [
       lng: 25.5780772,
       address: "1 RING ROAD GREENACRES",
       node: "n/a",
-      region: "Port Elizabeth"
+      region: "Eastern Cape"
     },
     metrics: {
       value: 42115988,
@@ -3789,7 +3789,7 @@ export const properties: Property[] = [
       lng: 25.5586924,
       address: "MAIN ROAD WALMER PARK",
       node: "n/a",
-      region: "Port Elizabeth"
+      region: "Eastern Cape"
     },
     metrics: {
       value: 42115988,
@@ -4481,8 +4481,8 @@ export const Properties: PropertyLocation[] = [
   },
   {
     id: '5',
-    name: 'Port Elizabeth Residential Complex',
-    address: 'Summerstrand, Port Elizabeth, EC',
+    name: 'Eastern Cape Residential Complex',
+    address: 'Summerstrand, Eastern Cape, EC',
     latitude: -33.9608,
     longitude: 25.6022,
     value: 'R23,800,000',
