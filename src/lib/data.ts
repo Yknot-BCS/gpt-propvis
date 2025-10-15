@@ -3231,7 +3231,7 @@ export const properties: Property[] = [
       lng: 27.9351608,
       address: "BONZA BAY ROAD BEACON BAY",
       node: "n/a",
-      region: "Western Cape"
+      region: "Port Elizabeth"
     },
     metrics: {
       value: 42115988,
@@ -3386,7 +3386,7 @@ export const properties: Property[] = [
       lng: 25.5780772,
       address: "1 RING ROAD GREENACRES",
       node: "n/a",
-      region: "Western Cape"
+      region: "Port Elizabeth"
     },
     metrics: {
       value: 42115988,

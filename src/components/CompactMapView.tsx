@@ -1,10 +1,12 @@
 'use client';
 import { useEffect, useRef } from 'react';
 import 'leaflet/dist/leaflet.css';
+import 'leaflet.markercluster/dist/MarkerCluster.css';
+import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 import { properties } from '../lib/data';
 import type { Property } from '../lib/data';
 import L from 'leaflet';
-
+import 'leaflet.markercluster';
 
 interface CompactMapViewProps {
   onPropertySelect?: (property: Property) => void;
@@ -14,6 +16,7 @@ interface CompactMapViewProps {
 export function CompactMapView({ onPropertySelect, height = 400 }: CompactMapViewProps) {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<L.Map | null>(null);
+  const clusterGroupRef = useRef<L.MarkerClusterGroup | null>(null);
 
   const activeProperties = properties.filter(p => p.status === 'Active');
 
@@ -30,6 +33,24 @@ export function CompactMapView({ onPropertySelect, height = 400 }: CompactMapVie
     });
   };
 
+  // Create markers with click handlers
+  const createMarkers = () => {
+    return activeProperties.map((property) => {
+      const marker = L.marker(
+        [property.location.lat, property.location.lng],
+        { icon: createMarkerIcon(property.type) }
+      );
+
+      // Add click handler
+      marker.on('click', () => {
+        onPropertySelect?.(property);
+      });
+
+      return marker;
+    });
+  };
+
+  // Initialize map and markers
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
 
@@ -41,67 +62,59 @@ export function CompactMapView({ onPropertySelect, height = 400 }: CompactMapVie
         ]
       : [-26.2041, 28.0473];
 
-    // Initialize the map on the div with a given center and zoom
+    // Initialize the map
     const map = L.map(mapContainerRef.current, {
       center: center,
-      zoom: 18,
+      zoom: 10,
       maxZoom: 19,
       minZoom: 3,
     });
 
-    // Add OpenStreetMap tile layer
+    // Add tile layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       maxZoom: 19,
     }).addTo(map);
 
-    // Add markers for each property
-    activeProperties.forEach((property) => {
-      const marker = L.marker(
-        [property.location.lat, property.location.lng],
-        { icon: createMarkerIcon(property.type) }
-      ).addTo(map);
+    // Create cluster group with minimum cluster size of 10
+    const clusterGroup = L.markerClusterGroup({
+      // Use a very small radius to effectively require 10+ markers to cluster
+      maxClusterRadius: 20,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      zoomToBoundsOnClick: true,
+      disableClusteringAtZoom: 15,
+      chunkedLoading: true,
+    } as any);
 
-      // Add popup with property details
-      marker.bindPopup(`
-        <div style="font-family: system-ui; min-width: 150px;">
-          <strong style="font-size: 14px;">${property.name}</strong>
-          <p style="margin: 4px 0; color: #666; font-size: 12px;">${property.location.address}</p>
-          <p style="margin: 4px 0; font-size: 12px;">
-            <span style="color: #666;">Type:</span> ${property.type}
-          </p>
-        </div>
-      `);
+    // Add markers to cluster group
+    const markers = createMarkers();
+    markers.forEach(marker => clusterGroup.addLayer(marker));
 
-      // Add click handler
-      if (onPropertySelect) {
-        marker.on('click', () => {
-          onPropertySelect(property);
-        });
-      }
-    });
+    // Add cluster group to map
+    map.addLayer(clusterGroup);
 
-    // Fit bounds to show all markers with maximum zoom
+    // Fit bounds to show all markers
     if (activeProperties.length > 0) {
       const bounds = L.latLngBounds(
         activeProperties.map(p => [p.location.lat, p.location.lng])
       );
       map.fitBounds(bounds, { 
         padding: [20, 20],
-        maxZoom: 19 // Zoom in close to see building details
+        maxZoom: 12
       });
     }
 
     mapRef.current = map;
+    clusterGroupRef.current = clusterGroup;
 
     // Cleanup on unmount
     return () => {
-      if (mapRef.current) {
-        mapRef.current.remove();
-        mapRef.current = null;
-      }
+      map.remove();
+      mapRef.current = null;
+      clusterGroupRef.current = null;
     };
-  }, [activeProperties, onPropertySelect]);
+  }, [onPropertySelect]); // Only recreate if onPropertySelect changes
 
   return (
     <div className="space-y-2">
