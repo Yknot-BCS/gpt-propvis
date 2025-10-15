@@ -85,7 +85,7 @@ export function CompactMapView({ onPropertySelect, height = 400 }: CompactMapVie
       zoomToBoundsOnClick: true,
       disableClusteringAtZoom: 15,
       chunkedLoading: true,
-    } as any);
+    } as L.MarkerClusterGroupOptions);
 
     // Add markers to cluster group
     const markers = createMarkers();

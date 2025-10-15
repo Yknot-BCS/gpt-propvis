@@ -1,4 +1,4 @@
-import type { Property, PropertyType, PropertyStatus } from './data';
+import type { Property, PropertyType, PropertyStatus } from '../src/lib/data';
 
 // Interface for the JSON data structure
 interface JsonPropertyData {

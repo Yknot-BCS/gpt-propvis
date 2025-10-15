@@ -3955,9 +3955,7 @@ export const calculatePortfolioByType = (props: Property[]) => {
   // Group properties by type and calculate totals
   const typeGroups = activeProperties.reduce((acc, property) => {
     const type = property.type;
-    if (!acc[type]) {
-      acc[type] = { value: 0, count: 0 };
-    }
+    acc[type] ??= { value: 0, count: 0 };
     acc[type].value += property.metrics.value;
     acc[type].count += 1;
     return acc;
@@ -3977,9 +3975,7 @@ export const calculateRegionalDistribution = (props: Property[]) => {
   // Group properties by region and calculate totals
   const regionGroups = activeProperties.reduce((acc, property) => {
     const region = property.location.region;
-    if (!acc[region]) {
-      acc[region] = { value: 0, properties: 0 };
-    }
+    acc[region] ??= { value: 0, properties: 0 };
     acc[region].value += property.metrics.value;
     acc[region].properties += 1;
     return acc;

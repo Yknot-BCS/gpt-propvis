@@ -124,13 +124,13 @@ function generateAcquisitionDate(): string {
   const startDate = new Date(2015, 0, 1);
   const endDate = new Date(2022, 11, 31);
   const randomDate = new Date(startDate.getTime() + Math.random() * (endDate.getTime() - startDate.getTime()));
-  return randomDate.toISOString().split('T')[0];
+  return randomDate.toISOString().split('T')[0]!;
 }
 
 function generateLeaseExpiry(): string {
   const startDate = new Date();
   const endDate = new Date(startDate.getTime() + (365 * 24 * 60 * 60 * 1000) * (2 + Math.random() * 8)); // 2-10 years
-  return endDate.toISOString().split('T')[0];
+  return endDate.toISOString().split('T')[0]!;
 }
 
 // Function to transform JSON data to Property interface
