@@ -33,26 +33,25 @@ export function CompactMapView({ onPropertySelect, height = 400 }: CompactMapVie
     });
   };
 
-  // Create markers with click handlers
-  const createMarkers = () => {
-    return activeProperties.map((property) => {
-      const marker = L.marker(
-        [property.location.lat, property.location.lng],
-        { icon: createMarkerIcon(property.type) }
-      );
-
-      // Add click handler
-      marker.on('click', () => {
-        onPropertySelect?.(property);
-      });
-
-      return marker;
-    });
-  };
-
   // Initialize map and markers
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
+
+    const createMarkers = () => {
+      return activeProperties.map((property) => {
+        const marker = L.marker(
+          [property.location.lat, property.location.lng],
+          { icon: createMarkerIcon(property.type) }
+        );
+
+        // Add click handler
+        marker.on('click', () => {
+          onPropertySelect?.(property);
+        });
+
+        return marker;
+      });
+    };
 
     // Calculate center from active properties
     const center: [number, number] = activeProperties.length > 0
@@ -114,7 +113,7 @@ export function CompactMapView({ onPropertySelect, height = 400 }: CompactMapVie
       mapRef.current = null;
       clusterGroupRef.current = null;
     };
-  }, [onPropertySelect]); // Only recreate if onPropertySelect changes
+  }, [onPropertySelect, activeProperties]); // Only recreate if onPropertySelect changes
 
   return (
     <div className="space-y-2">

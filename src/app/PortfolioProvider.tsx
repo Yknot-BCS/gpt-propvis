@@ -1,7 +1,6 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react';
-import { toast } from 'sonner';
 import type { Property, Notification } from '@/lib/data';
 import { properties } from '@/lib/data';
 

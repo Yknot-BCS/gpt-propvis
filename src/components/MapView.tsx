@@ -2,8 +2,8 @@
 import { useState, useEffect, useRef } from 'react';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import { properties } from '../lib/data';
-import type { Property } from '../lib/data';
+import { properties, PropertyTypes } from '../lib/data';
+import type { Property, PropertyType } from '../lib/data';
 
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
@@ -14,7 +14,7 @@ interface MapViewProps {
 }
 
 export function MapView({ selectedProperty, onPropertySelect }: MapViewProps) {
-  const [activeFilter, setActiveFilter] = useState<'all' | 'Office' | 'Industrial' | 'Retail'>('all');
+  const [activeFilter, setActiveFilter] = useState<'all' | PropertyTypes>('all');
   const [locationFilter, setLocationFilter] = useState<'all' | 'Gauteng' | 'KwaZulu-Natal' | 'Western Cape'>('all');
   const mapRef = useRef<L.Map | null>(null);
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
@@ -76,13 +76,13 @@ export function MapView({ selectedProperty, onPropertySelect }: MapViewProps) {
 
 
   // Create custom marker icons for different property types
-  const createMarkerIcon = (type: string, isSelected: boolean) => {
-    const colors = {
-      'Office': '#3b82f6',
-      'Industrial': '#f97316',
-      'Retail': '#22c55e'
+  const createMarkerIcon = (type: PropertyType, isSelected: boolean) => {
+    const colors: Record<PropertyType, string> = {
+      [PropertyTypes.OFFICE]: '#3b82f6',
+      [PropertyTypes.INDUSTRIAL]: '#f97316',
+      [PropertyTypes.RETAIL]: '#22c55e',
     };
-    const color = colors[type as keyof typeof colors] || '#3b82f6';
+    const color = colors[type] ?? '#3b82f6';
     const size = isSelected ? 32 : 24;
     const borderWidth = isSelected ? 3 : 2;
     
@@ -238,23 +238,23 @@ export function MapView({ selectedProperty, onPropertySelect }: MapViewProps) {
                       All
                     </Button>
                     <Button
-                      variant={activeFilter === 'Office' ? 'default' : 'outline'}
+                      variant={activeFilter === PropertyTypes.OFFICE ? 'default' : 'outline'}
                       size="sm"
-                      onClick={() => setActiveFilter('Office')}
+                      onClick={() => setActiveFilter(PropertyTypes.OFFICE)}
                     >
                       Office
                     </Button>
                     <Button
-                      variant={activeFilter === 'Industrial' ? 'default' : 'outline'}
+                      variant={activeFilter === PropertyTypes.INDUSTRIAL ? 'default' : 'outline'}
                       size="sm"
-                      onClick={() => setActiveFilter('Industrial')}
+                      onClick={() => setActiveFilter(PropertyTypes.INDUSTRIAL)}
                     >
                       Industrial
                     </Button>
                     <Button
-                      variant={activeFilter === 'Retail' ? 'default' : 'outline'}
+                      variant={activeFilter === PropertyTypes.RETAIL ? 'default' : 'outline'}
                       size="sm"
-                      onClick={() => setActiveFilter('Retail')}
+                      onClick={() => setActiveFilter(PropertyTypes.RETAIL)}
                     >
                       Retail
                     </Button>
